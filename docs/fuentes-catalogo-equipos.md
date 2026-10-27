@@ -1,6 +1,6 @@
 # Fuentes del catálogo de equipos
 
-Consulta realizada el 26 de octubre de 2026. Este catálogo es una selección pequeña y ampliable; las referencias genéricas son escenarios de cálculo editables, no especificaciones de modelos.
+Consulta realizada el 26 de octubre de 2026. El buscador combina referencias de consumo documentado con 3.323 productos comerciales listados en Colombia. La lista comercial no equivale a 3.323 fichas técnicas: en esas entradas la potencia permanece pendiente hasta verificar placa o manual. Las referencias genéricas son escenarios editables, no especificaciones de modelos.
 
 | Referencia | Dato que se muestra | Fuente técnica | Evidencia de disponibilidad en Colombia | Alcance |
 |---|---|---|---|---|
@@ -11,6 +11,12 @@ Consulta realizada el 26 de octubre de 2026. Este catálogo es una selección pe
 | Aire acondicionado Simply SYAC12114 | Sin potencia publicada en el catálogo; se solicita leer la placa para estimar | [Orden de Compra 98128, Colombia Compra Eficiente](https://operaciones.colombiacompra.gov.co/tienda-virtual-del-estado-colombiano/ordenes-compra/98128) | [Colombia Compra Eficiente: referencia Simply SYAC12114](https://operaciones.colombiacompra.gov.co/tienda-virtual-del-estado-colombiano/ordenes-compra/98128) | La orden prueba que la referencia aparece en compras públicas, no sus vatios; se omite consumo estimado hasta verificar ficha primaria o placa. |
 | Ventilador Samurai Silence Force Plus 2 en 1 | Potencia nominal 80 W | [Ficha comercial colombiana de Electromuebles](https://electromuebles.com.co/producto/aire-y-climatizacion/ventiladores/ventilador-samurai-silence-force-plus-2-en-1-blanco/) | La ficha comercial colombiana identifica la referencia y su potencia | Potencia nominal publicada por comercio; no es consumo medido. El consumo promedio depende de velocidad y horas. Confirmar placa/manual de la unidad. |
 | Categorías genéricas (ventilador, nevera, aire acondicionado, TV, lavadora, iluminación, ducha, router, portátil, microondas, arrocera y congelador) | Escenarios de potencia ilustrativos, todos editables | No se presenta una ficha de fabricante ni una fuente de modelo | Se ofrecen por tipo de producto, sin asociarlos con una marca/modelo | Útiles solo para explorar. Reemplazar la potencia con el valor de la placa o manual del equipo para mejorar la estimación. No inferir clase RETIQ. |
+
+## Catálogo comercial y método de actualización
+
+- La lista contiene 3.323 URL únicas de producto obtenidas de los sitemaps públicos de [Homecenter Colombia](https://www.homecenter.com.co/). El nombre, categoría aproximada, SKU y enlace sirven para encontrar la publicación; no prueban variante técnica, existencia actual ni consumo.
+- Los sitemaps pueden cambiar. Para reconstruir una lista de referencia desde las publicaciones públicas se usa `backend/tools/build-appliance-catalog-listings.ps1`, que obtiene los sitemaps y genera `frontend/appliance-catalog-listings.js`. Después se deben revisar la calidad de las categorías y las marcas porque los títulos comerciales no son datos técnicos normalizados.
+- Las 3.323 referencias comerciales tienen `0` vatios de catálogo y estado “referencia sin potencia confirmada”. El buscador solicita la placa/manual antes de calcular consumo. Las cifras documentadas en la tabla siguiente pertenecen a una pequeña selección distinta; no se propagan a todos los productos de una familia. No se infiere etiqueta ni clase RETIQ. No se atribuye potencia por similitud de nombre, modelo, capacidad o tensión.
 
 ## Método y límites
 
