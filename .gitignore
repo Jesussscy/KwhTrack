@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+artifacts/
+*.pem
+*.key
+mysql-data/
+*.log
+.DS_Store

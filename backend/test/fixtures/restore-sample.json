@@ -1,0 +1,9 @@
+{
+ "product":"kwhTrack","version":1,
+ "data":{
+  "settings":{"name":"Casa restaurada de prueba","budget":120000,"rate":900,"customRate":true,"savingsGoal":15},
+  "example":false,
+  "devices":[{"id":"test-fan","name":"Ventilador de prueba","category":"Ventilador","watts":100,"quantity":1,"hours":2,"days":30,"factor":1}],
+  "readings":[],"bills":[],"draftPlan":[]
+ }
+}

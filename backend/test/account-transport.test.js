@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const {request}=createRequire(import.meta.url)('../../frontend/account-transport.js');
+test('una respuesta interrumpida no repite el PUT ni anuncia guardado',async()=>{let calls=0;await assert.rejects(request(async()=>{calls++;return {ok:true,status:200,json:async()=>{throw Error('Truncated JSON');}};},'/api/home',{method:'PUT',body:'{}'}),error=>error.code==='UNCONFIRMED_RESPONSE'&&/hogar local se conserva/.test(error.message));assert.equal(calls,1);});
+test('un fallo de red conserva el mensaje de recuperación y no reintenta',async()=>{let calls=0;await assert.rejects(request(async()=>{calls++;throw Error('Connection lost');},'/api/home',{method:'PUT'}),{code:'UNCONFIRMED_RESPONSE'});assert.equal(calls,1);});
+test('una respuesta HTML o sin objeto se presenta sin errores técnicos al usuario',async()=>{for(const json of [async()=>{throw Error('Unexpected token <');},async()=>null,async()=>[],async()=>42])await assert.rejects(request(async()=>({ok:false,status:502,json}),'/api/home',{}),error=>error.code==='UNCONFIRMED_RESPONSE'&&!/Unexpected|SyntaxError/.test(error.message));});
+test('los errores de sesión y conflicto mantienen sus códigos de recuperación',async()=>{for(const [status,code] of [[401,'SESSION_REQUIRED'],[403,'CSRF_MISMATCH'],[409,'ACCOUNT_CHANGED']])await assert.rejects(request(async()=>({ok:false,status,json:async()=>({error:'Revisa la sesión.',code})}),'/api/home',{}),error=>error.status===status&&error.code===code);});
+test('una respuesta válida devuelve los datos y conserva opciones de solicitud',async()=>{const options={method:'GET',credentials:'same-origin'},data={revision:5,data:{}};const actual=await request(async(path,received)=>{assert.equal(path,'/api/home');assert.equal(received,options);return {ok:true,status:200,json:async()=>data};},'/api/home',options);assert.equal(actual,data);});

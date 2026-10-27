@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const {compare}=createRequire(import.meta.url)('../../frontend/comparison.js');
+const home=()=>({settings:{name:'Hogar',budget:100000,rate:1000,customRate:true},example:false,devices:[{id:'a',name:'Equipo A',watts:100,hours:4},{id:'b',name:'Equipo B',watts:200,hours:2}],readings:[],bills:[],draftPlan:[]});
+test('revela equipos modificados aunque coincidan cantidades y consumo total',()=>{const a=home(),b=home();b.devices[0].hours=2;b.devices[1].hours=3;const diff=compare(a,b);assert.equal(diff.identical,false);assert.equal(diff.collections[0].changed.length,2);assert.deepEqual(diff.collections[0].changed[0].fields,[{key:'hours',before:4,after:2}]);});
+test('distingue añadidos, eliminados y ajustes sin mutar las versiones',()=>{const a=home(),b=home();b.devices.splice(0,1);b.readings.push({id:'r',date:'2025-01-01',value:100});b.settings.rate=1000.1234;const saved=structuredClone([a,b]),diff=compare(a,b);assert.equal(diff.collections[0].removed[0].id,'a');assert.equal(diff.collections[1].added[0].id,'r');assert.deepEqual(diff.settings,[{key:'rate',before:1000,after:1000.1234}]);assert.deepEqual([a,b],saved);});
+test('el orden de registros no inventa cambios y las copias antiguas admiten plan vacío',()=>{const a=home(),b=home();b.devices.reverse();delete b.draftPlan;assert.equal(compare(a,b).identical,true);});
+test('el plan, los campos de factura y la marca de ejemplo también se comparan',()=>{const a=home(),b=home();a.bills=[{id:'f',amount:0}];b.bills=[{id:'f',amount:100}];b.draftPlan=[{id:'a',hours:2,days:30,fingerprint:'ref'}];b.example=true;const diff=compare(a,b);assert.equal(diff.settings[0].key,'example');assert.equal(diff.collections[2].changed[0].fields[0].key,'amount');assert.equal(diff.collections[3].added.length,1);});

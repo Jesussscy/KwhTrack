@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const {createReader}=createRequire(import.meta.url)('../../frontend/backup.js');
+const payload=name=>JSON.stringify({product:'kwhTrack',version:1,data:{settings:{name,budget:100000,rate:1000},devices:[],readings:[],bills:[]}});
+test('una lectura anterior lenta no sustituye el archivo seleccionado después',async()=>{const reader=createReader();let finish;const first=reader.read({size:100,text:()=>new Promise(resolve=>finish=resolve)});const second=await reader.read({size:100,text:async()=>payload('Segunda copia')});finish(payload('Primera copia'));assert.equal(second.data.settings.name,'Segunda copia');assert.deepEqual(await first,{current:false});});
+test('cancelar la revisión invalida una lectura que aún no ha terminado',async()=>{const reader=createReader();let finish;const pending=reader.read({size:100,text:()=>new Promise(resolve=>finish=resolve)});reader.cancel();finish(payload('Copia cancelada'));assert.deepEqual(await pending,{current:false});});
+test('archivo incompatible, ilegible o excesivo se rechaza y una selección posterior puede recuperarse',async()=>{const reader=createReader();let reads=0;const large=await reader.read({size:1000001,text:async()=>{reads++;return payload('Grande');}});assert.match(large.error,/1 MB/);assert.equal(reads,0);assert.match((await reader.read({size:5,text:async()=>'{oops'})).error,/JSON/);assert.match((await reader.read({size:2,text:async()=>'{}'})).error,/compatible/);assert.equal((await reader.read({size:100,text:async()=>payload('Válida')})).data.settings.name,'Válida');});

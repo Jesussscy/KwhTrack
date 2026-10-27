@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url);
+const insights=require('../../frontend/insights.js');
+test('un equipo pausado no afecta el total y conserva su referencia',()=>{const d={mode:'monthly',monthlyKwh:30,quantity:2,active:false};assert.equal(insights.deviceEnergy(d),0);assert.equal(insights.deviceEnergy({...d,active:true}),60);});
+test('normaliza periodos desiguales por días y no por totales',()=>{const result=insights.compareBills([{start:'2026-01-01',end:'2026-01-31',kwh:300},{start:'2026-01-31',end:'2026-02-20',kwh:200}]);assert.equal(result.change,0);assert.equal(result.currentDays,20);});
+test('no calcula porcentaje sobre consumo cero ni compara solapamientos',()=>{assert.equal(insights.compareBills([{start:'2026-01-01',end:'2026-02-01',kwh:0},{start:'2026-02-01',end:'2026-03-01',kwh:100}]).change,null);assert.equal(insights.compareBills([{start:'2026-01-01',end:'2026-02-01',kwh:100},{start:'2026-01-15',end:'2026-02-15',kwh:100}]),null);});
+test('lecturas se ordenan y generan promedio, sin inventar consumo diario',()=>{const [r]=insights.readingIntervals([{date:'2026-02-11',value:130},{date:'2026-02-01',value:100}]);assert.equal(r.kwh,30);assert.equal(r.daily,3);assert.equal(r.days,10);});
+test('categorías agregadas conservan todo el consumo incluso con más de cinco',()=>{const devices=Array.from({length:8},(_,i)=>({category:'Tipo '+i,watts:1000,quantity:1,hours:1,days:1,factor:1}));devices.push({...devices[0]});const groups=insights.groupConsumption(devices);assert.equal(groups.length,5);assert.equal(groups.reduce((s,g)=>s+g.kwh,0),9);assert.equal(groups[0].kwh,2);});
+test('escenario sustituye un equipo sin sumar su consumo dos veces',()=>{assert.deepEqual(insights.scenario(100,40,20,1000,90000),{kwh:80,cost:80000,annual:960000,margin:10000,delta:20000});});
+test('periodos adyacentes son válidos, solapados no',()=>{assert.equal(insights.overlaps({start:'2026-02-01',end:'2026-03-01'},[{start:'2026-01-01',end:'2026-02-01'}]),false);assert.equal(insights.overlaps({start:'2026-01-20',end:'2026-02-20'},[{start:'2026-01-01',end:'2026-02-01'}]),true);});
