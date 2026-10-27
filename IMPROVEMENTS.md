@@ -117,3 +117,25 @@ Verificación: 56 pruebas unitarias aprobadas y comprobación de sintaxis. En el
 - [x] Permitir un puerto de laboratorio alternativo sin cambiar el origen predeterminado.
 
 Comprobación actual: sintaxis correcta y 60 pruebas unitarias aprobadas en el árbol de trabajo actual; integración MySQL omitida en esta ejecución sin entorno. En navegador se comprobó: factura eliminada y recuperada después de esperar 16 segundos; borrador de lectura conservado con Seguir editando y descartado solo tras confirmación; un nuevo guardado retira Deshacer; equipo restaurado con foco en test-fan. Se observó el bloqueo de una escritura ante cambios externos en 3198 y se completó la comprobación del equipo en el origen independiente 3201. Móvil a 375 px: página y aviso de 360 px, sin desbordamiento. Sin errores/avisos de consola en el recorrido final.
+
+## Ciclo del 19 de octubre de 2026 — revisión de copias de archivo
+
+- [x] Mostrar nombre/tamaño y comparación de presupuesto, tarifa y consumo antes de restaurar.
+- [x] Reutilizar el detalle de añadidos/modificados/eliminados de las cuentas para copias de archivo.
+- [x] Permitir elegir otra copia y descargar el hogar actual desde la revisión.
+- [x] Bloquear copias inválidas con error visible y cancelar lecturas pendientes al cerrar.
+- [x] Ignorar una selección anterior si termina después de una selección más reciente.
+- [x] Proteger formularios pendientes y evitar aplicar una revisión sobre un hogar cambiado.
+- [x] Distinguir el original dañado de la vista temporal y ofrecer su descarga.
+
+Pruebas: 63 unitarias aprobadas; sintaxis correcta. En navegador y origen 3202: rechazo de copia incompatible; selección posterior válida; revisión con presupuesto 100.000 → 120.000 COP y consumo 15 → 6 kWh; cancelar conserva el hogar; restaurar cambia el hogar y Deshacer lo recupera. Recuperación desde original ilegible: se verificaron descargas antes/después con exactamente el mismo contenido y no se ofreció deshacer hacia el ejemplo temporal. Móvil a 375 px: página de 360 px y diálogo de unos 324 px con tabla desplazable. Sin avisos/errores de consola en el recorrido comprobado.
+
+## 26 de octubre de 2026 — buscador de equipos eléctricos
+
+- [x] Añadir un catálogo reutilizable con búsqueda por tipo, marca, modelo y alias.
+- [x] Mostrar variante, procedencia, datos de potencia, escenario mensual y costo antes de añadir al hogar.
+- [x] Diferenciar referencias verificadas de escenarios genéricos editables.
+- [x] Reutilizar el formulario y guardado existentes sin cambios destructivos al hogar.
+- [x] Documentar fuentes y límites; no asignar clases RETIQ.
+
+Verificación: `npm run check`; 77 pruebas aprobadas y una integración MySQL omitida por depender del entorno. Se inició en `http://127.0.0.1:3100` y respondió health `ok`; búsqueda PS5, variante, fuente, cambio a 4 h/día (25,88 kWh/mes), guardado al inventario y búsqueda de abanico Samurai verificados en navegador.

@@ -1,6 +1,6 @@
 # kwhTrack
 
-[Código en GitHub](https://github.com/shift-jesus/KwhTrack) · [Fuentes y alcance de la guía de Cartagena](docs/fuentes-cartagena.md) · [Mejoras del proyecto](IMPROVEMENTS.md)
+[Modelo entidad-relación mejorado (Lucidchart / Draw.io)](docs/modelo-entidad-relacion-kwh.drawio) · [Segunda entrega Lucidchart (archivo Draw.io importable)](docs/segunda-entrega-lucidchart.drawio) · [Código en GitHub](https://github.com/Jesussscy/KwhTrack) · [Fuentes del catálogo de equipos](docs/fuentes-catalogo-equipos.md) · [Fuentes y alcance de la guía de Cartagena](docs/fuentes-cartagena.md) · [Mejoras del proyecto](IMPROVEMENTS.md)
 
 Aplicación local en HTML5, CSS3 y JavaScript puro, con servidor Node.js y API persistente MySQL. La interfaz conserva un espacio de trabajo en el navegador y permite guardar o cargar una copia del hogar en una cuenta MySQL, con revisión y confirmación explícitas.
 
@@ -10,7 +10,7 @@ En Presupuesto anual puedes elegir una reducción de 0 a 50 % y obtener horarios
 
 La propuesta muestra costo actual, costo con el plan, límite mensual y ahorro acumulado a 12 meses con precio y hábitos constantes. No presenta una serie mensual medida. Revisar guarda el borrador; aplicar requiere confirmar los horarios y permite deshacer con el mecanismo existente.
 
-Equipos eléctricos incorpora consolas, routers, cocina eléctrica, pequeños aparatos y herramientas, con ejemplos editables compatibles con las copias y la API. Tarifas y fuentes incluye conceptos visuales, un ejemplo interactivo y una consulta educativa por estrato. El estrato no modifica la tarifa ni liquida subsidios: se conserva el cálculo con el precio configurado y se enlazan fuentes de Afinia y Superservicios. La tarifa vigente de Afinia no pudo verificarse directamente; el valor inicial sigue identificado como referencia histórica.
+Equipos eléctricos incluye un buscador libre por tipo, marca y modelo. La ficha del catálogo muestra variantes, potencia, escenario mensual configurable, tarifa aplicada y fuente antes de añadir al inventario. Las referencias genéricas quedan identificadas y editables. Las fuentes, alcance y supuestos están en [docs/fuentes-catalogo-equipos.md](docs/fuentes-catalogo-equipos.md). El catálogo no representa todos los productos del mercado ni asigna distintivos RETIQ. Equipos eléctricos incorpora consolas, routers, cocina eléctrica, pequeños aparatos y herramientas, con ejemplos editables compatibles con las copias y la API. Tarifas y fuentes incluye conceptos visuales, un ejemplo interactivo y una consulta educativa por estrato. El estrato no modifica la tarifa ni liquida subsidios: se conserva el cálculo con el precio configurado y se enlazan fuentes de Afinia y Superservicios. La tarifa vigente de Afinia no pudo verificarse directamente; el valor inicial sigue identificado como referencia histórica.
 
 ## Ejecutar
 
@@ -37,6 +37,12 @@ En **Tarifas y fuentes**, selecciona el estrato de tu vivienda y cambia entre **
 Los datos de la guía son educativos: no modifican la tarifa de energía ni el estrato oficial, no aplican subsidios automáticamente y no se suman al inventario. Consulta el [registro de fuentes](docs/fuentes-cartagena.md) para conocer qué pudo verificarse y qué requiere consultar el documento vigente.
 
 ## Funciones disponibles
+
+### Análisis de facturas
+
+Lecturas y facturas permite elegir dos periodos y comparar kWh, kWh/día y valor total facturado, con diferencias absolutas y porcentuales. Una referencia de cero no genera porcentajes y los periodos superpuestos no se comparan. La tendencia de las últimas 12 facturas incluye una tabla equivalente.
+
+La alerta compara el promedio diario de la última factura con el promedio de los tres periodos anteriores. El umbral inicial es 20 %, ajustable entre 1 y 200 % durante la sesión de la página. No altera los registros, no se incluye en las copias y no representa una meta regulatoria. Mi resumen muestra un acceso a la última factura, separado del inventario estimado.
 
 Resumen calculado, CRUD de electrodomésticos, CRUD de lecturas, registro y eliminación de facturas, simulador con aplicación explícita del cambio, presupuesto, configuración del hogar y consulta de fuentes. El trabajo cotidiano se guarda en este navegador mediante localStorage. Cuenta y copias permite registrar/iniciar/cerrar sesión y trasladar una copia completa a MySQL o desde MySQL. La portada comienza con un inventario ilustrativo identificado como ejemplo; se puede vaciar desde Electrodomésticos.
 
@@ -188,3 +194,11 @@ Si hay formularios con cambios pendientes, primero se ofrece seguir editando o d
 Deshacer queda disponible en un aviso al inicio del contenido hasta el siguiente guardado correcto, recarga, carga explícita de otra versión local o cierre del aviso. Su copia se mantiene en memoria durante esa sesión. El mensaje breve también ofrece Deshacer ahora, pero su desaparición no retira el aviso persistente. Una escritura rechazada por conflicto no se anuncia como eliminada.
 
 El laboratorio puede usar otro origen con `KWH_QA_PORT`: en PowerShell, establece `$env:KWH_QA_PORT='3201'` y ejecuta `node tools/preview-lab.mjs` desde backend. El puerto predeterminado sigue siendo 3198. Cada puerto separa el almacenamiento del navegador para evitar que pruebas paralelas interfieran entre sí.
+
+## Revisar un archivo antes de restaurarlo
+
+Restaurar copia muestra el nombre y tamaño del archivo, compara el hogar actual con Archivo seleccionado y detalla qué se añadirá, modificará o eliminará. Puedes descargar el hogar actual, elegir otra copia o cancelar sin sustituir datos. La confirmación protege también los formularios con cambios pendientes.
+
+Una copia incompatible o ilegible muestra un error junto a la revisión y no se puede aplicar. Elegir otra copia permite recuperarse sin recargar la aplicación. Las lecturas anteriores que terminen tarde y las lecturas canceladas no reemplazan la selección actual. Se mantiene el límite de 1 MB.
+
+Cuando el original local está dañado se ofrece descargar ese original y se conserva antes de restaurar; la vista temporal no se usa para inventar diferencias. La recuperación desde datos dañados conserva el original, mientras que restaurar sobre un hogar válido ofrece Deshacer. Las comparaciones usan cifras estimadas del inventario y no afirman medir el medidor.

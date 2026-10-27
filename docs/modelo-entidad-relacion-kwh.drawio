@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-26T12:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="kwh-er-model" name="Modelo entidad-relación KWH">
+    <mxGraphModel dx="2000" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="MODELO ENTIDAD–RELACIÓN · KWH TRACK" style="text;html=1;align=left;verticalAlign=middle;fontSize=27;fontStyle=1;fontColor=#123B4A;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Relaciones y cardinalidades explícitas · basado en backend/database/schema.sql" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#526777;" vertex="1" parent="1">
+          <mxGeometry x="50" y="76" width="1200" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;b&gt;PK&lt;/b&gt; primaria　 &lt;b&gt;FK&lt;/b&gt; foránea　 &lt;b&gt;UQ&lt;/b&gt; única　 &lt;b&gt;FK?&lt;/b&gt; opcional&lt;br&gt;Conectores: 1 a muchos · etiquetas muestran mínimos y máximos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F6F8;strokeColor=#B8CCD4;fontColor=#24404D;fontSize=13;align=left;verticalAlign=middle;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="28" width="590" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="user_home" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.45;exitPerimeter=1;entryX=0;entryY=0.25;entryPerimeter=1;" edge="1" parent="1" source="tbl_users" target="tbl_homes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="363" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_user_home" value="1 usuario · 0..N hogares" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D7E2E6;fontColor=#334B59;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="405" y="315" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="home_device" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.16;exitPerimeter=1;entryX=0;entryY=0.48;entryPerimeter=1;" edge="1" parent="1" source="tbl_homes" target="tbl_devices">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_home_device" value="1 hogar · 0..N equipos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D7E2E6;fontColor=#334B59;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="275" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="home_reading" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=0;exitY=0.8;exitPerimeter=1;entryX=1;entryY=0.25;entryPerimeter=1;" edge="1" parent="1" source="tbl_homes" target="tbl_readings">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="720" />
+              <mxPoint x="500" y="858" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_home_reading" value="1 hogar · 0..N lecturas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D7E2E6;fontColor=#334B59;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="720" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="home_bill" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=0.52;exitY=1;exitPerimeter=1;entryX=0.52;entryY=0;entryPerimeter=1;" edge="1" parent="1" source="tbl_homes" target="tbl_bills">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="853" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_home_bill" value="1 hogar · 0..N facturas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D7E2E6;fontColor=#334B59;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="890" y="755" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="home_estimate" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.72;exitPerimeter=1;entryX=0;entryY=0.28;entryPerimeter=1;" edge="1" parent="1" source="tbl_homes" target="tbl_estimates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="620" />
+              <mxPoint x="1580" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_home_estimate" value="1 hogar · 0..N estimaciones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D7E2E6;fontColor=#334B59;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="570" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tariff_estimate" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=1;exitY=0.2;exitPerimeter=1;entryX=0;entryY=0.78;entryPerimeter=1;" edge="1" parent="1" source="tbl_tariffs" target="tbl_estimates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="1020" />
+              <mxPoint x="1600" y="815" />
+              <mxPoint x="1640" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_tariff_estimate" value="0..1 tarifa por estimación" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D7E2E6;fontColor=#334B59;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="785" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="user_session" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" edge="1" parent="1" source="tbl_users" target="tbl_sessions">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_user_session" value="1 usuario · 0..N sesiones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D7E2E6;fontColor=#334B59;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="95" y="745" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_users" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="340" height="224" as="geometry" />
+        </mxCell>
+        <mxCell id="head_users" value="USERS · cuentas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#166C72;strokeColor=#166C72;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="users_row_0" value="&lt;b&gt;[PK] id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="292" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="users_row_1" value="&lt;b&gt;name&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(80)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="322" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="users_row_2" value="&lt;b&gt;[UQ] email&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(190)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFF7E5;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="352" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="users_row_3" value="&lt;b&gt;password_hash&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(255) · hash&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="382" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="users_row_4" value="&lt;b&gt;role&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;ENUM('user','admin')&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="412" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="users_row_5" value="&lt;b&gt;created_at&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;TIMESTAMP&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="442" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_homes" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="390" height="374" as="geometry" />
+        </mxCell>
+        <mxCell id="head_homes" value="HOMES · hogares" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#166C72;strokeColor=#166C72;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_0" value="&lt;b&gt;[PK] id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="342" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_1" value="&lt;b&gt;[FK] user_id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;→ USERS.id&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#F3F0FA;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="372" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_2" value="&lt;b&gt;name&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(80)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="402" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_3" value="&lt;b&gt;city&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(80) · Cartagena por defecto&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="432" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_4" value="&lt;b&gt;stratum&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;TINYINT · 1–6 · nullable&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="462" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_5" value="&lt;b&gt;budget&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DECIMAL(14,2)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="492" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_6" value="&lt;b&gt;custom_rate&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DECIMAL(12,4)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="522" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_7" value="&lt;b&gt;custom_rate_enabled&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;BOOLEAN&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="552" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_8" value="&lt;b&gt;savings_goal&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DOUBLE · 0–50&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="582" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_9" value="&lt;b&gt;draft_plan&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;JSON · nullable&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="612" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="homes_row_10" value="&lt;b&gt;revision&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;BIGINT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="642" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_devices" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="150" width="370" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="head_devices" value="DEVICES · equipos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#347B89;strokeColor=#347B89;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="150" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_0" value="&lt;b&gt;[PK] id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="192" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_1" value="&lt;b&gt;[FK] home_id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;→ HOMES.id&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#F3F0FA;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="222" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_2" value="&lt;b&gt;[UQ] client_key&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;único dentro del hogar&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFF7E5;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="252" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_3" value="&lt;b&gt;name / category&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(80) / VARCHAR(50)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="282" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_4" value="&lt;b&gt;calculation_mode&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;ENUM('power','monthly')&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="312" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_5" value="&lt;b&gt;active / monthly_kwh&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;BOOLEAN / DOUBLE&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="342" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_6" value="&lt;b&gt;watts / quantity&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DOUBLE / INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="372" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_7" value="&lt;b&gt;hours / days&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DOUBLE / TINYINT&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="402" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="devices_row_8" value="&lt;b&gt;factor&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DOUBLE · 0–1&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="432" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_readings" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="800" width="340" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="head_readings" value="READINGS · lecturas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#347B89;strokeColor=#347B89;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="800" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="readings_row_0" value="&lt;b&gt;[PK] id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="842" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="readings_row_1" value="&lt;b&gt;[FK] home_id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;→ HOMES.id&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#F3F0FA;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="872" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="readings_row_2" value="&lt;b&gt;[UQ] client_key&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;único dentro del hogar&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFF7E5;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="902" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="readings_row_3" value="&lt;b&gt;[UQ] reading_date&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;única por hogar&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFF7E5;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="932" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="readings_row_4" value="&lt;b&gt;accumulated_kwh&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DOUBLE · ≥ 0&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="962" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_bills" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="850" width="390" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="head_bills" value="BILLS · facturas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#347B89;strokeColor=#347B89;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="850" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bills_row_0" value="&lt;b&gt;[PK] id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="892" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="bills_row_1" value="&lt;b&gt;[FK] home_id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;→ HOMES.id&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#F3F0FA;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="922" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="bills_row_2" value="&lt;b&gt;[UQ] client_key&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;único dentro del hogar&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFF7E5;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="952" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="bills_row_3" value="&lt;b&gt;[UQ] period_start + period_end&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;único por hogar&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFF7E5;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="982" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="bills_row_4" value="&lt;b&gt;period_start / period_end&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DATE · fin &gt; inicio&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="1012" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="bills_row_5" value="&lt;b&gt;kwh&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DOUBLE · ≥ 0&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="1042" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="bills_row_6" value="&lt;b&gt;total_paid&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DECIMAL(15,2) · ≥ 0&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="651" y="1072" width="388" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_tariffs" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="850" width="370" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="head_tariffs" value="TARIFFS · tarifas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8A6A27;strokeColor=#8A6A27;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="850" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tariffs_row_0" value="&lt;b&gt;[PK] id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="892" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tariffs_row_1" value="&lt;b&gt;provider&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(80)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="922" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tariffs_row_2" value="&lt;b&gt;period_start / period_end&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DATE&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="952" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tariffs_row_3" value="&lt;b&gt;rate&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DECIMAL(12,4) · &gt; 0&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="982" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tariffs_row_4" value="&lt;b&gt;source_url&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;VARCHAR(1000)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="1012" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tariffs_row_5" value="&lt;b&gt;verification&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;ENUM('historical','verified','user')&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="1042" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tariffs_row_6" value="&lt;b&gt;conditions_text&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;TEXT&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1211" y="1072" width="368" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estimates" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="440" width="290" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="head_estimates" value="ESTIMATES · estimaciones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8A6A27;strokeColor=#8A6A27;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="440" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="estimates_row_0" value="&lt;b&gt;[PK] id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;INT UNSIGNED&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1651" y="482" width="288" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="estimates_row_1" value="&lt;b&gt;[FK] home_id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;→ HOMES.id&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#F3F0FA;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1651" y="512" width="288" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="estimates_row_2" value="&lt;b&gt;[FK?] tariff_id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;→ TARIFFS.id · nullable&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#F3F0FA;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1651" y="542" width="288" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="estimates_row_3" value="&lt;b&gt;rate_snapshot&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DECIMAL(12,4)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1651" y="572" width="288" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="estimates_row_4" value="&lt;b&gt;kwh / cost&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DOUBLE / DECIMAL&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1651" y="602" width="288" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="estimates_row_5" value="&lt;b&gt;assumptions&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;JSON&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1651" y="632" width="288" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="estimates_row_6" value="&lt;b&gt;created_at&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;TIMESTAMP&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1651" y="662" width="288" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_sessions" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B7C9D1;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1080" width="340" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="head_sessions" value="SESSIONS · sesiones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#76649B;strokeColor=#76649B;fontColor=#FFFFFF;fontSize=15;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1080" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sessions_row_0" value="&lt;b&gt;[PK] token_hash&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;BINARY(32)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#EAF5F3;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="1122" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sessions_row_1" value="&lt;b&gt;[FK] user_id&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;→ USERS.id&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#F3F0FA;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="1152" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sessions_row_2" value="&lt;b&gt;csrf_token&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;CHAR(64)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="1182" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sessions_row_3" value="&lt;b&gt;expires_at&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;DATETIME(3)&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="1212" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="sessions_row_4" value="&lt;b&gt;created_at&lt;/b&gt;　&lt;span style=&quot;color:#667784&quot;&gt;TIMESTAMP&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E0E8EB;strokeWidth=0.7;fontColor=#183B4A;fontSize=11;align=left;verticalAlign=middle;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="101" y="1242" width="338" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="&lt;b&gt;Notas:&lt;/b&gt; Cada entidad dependiente se vincula a su hogar. La tarifa de una estimación puede ser nula; &lt;i&gt;rate_snapshot&lt;/i&gt; conserva la tarifa usada. UQ indica restricciones únicas; cuando se aclara “por hogar”, la clave incluye home_id." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F6F8;strokeColor=#B8CCD4;fontColor=#24404D;fontSize=13;align=left;verticalAlign=middle;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1180" width="990" height="72" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

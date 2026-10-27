@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import vm from 'node:vm';
+const source=await readFile(new URL('../../frontend/appliance-catalog.js',import.meta.url),'utf8');
+const context={window:{}};vm.runInNewContext(source,context);
+const catalog=context.window.ApplianceCatalog;
+test('encuentra PS5 por nombre corto y conserva variantes diferenciadas',()=>{const digital=catalog.search('Play 5');assert.equal(digital[0].id,'ps5-digital');assert.equal(catalog.search('PS5 disco')[0].id,'ps5-disc');});
+test('encuentra abanico Samurai y marca las referencias genéricas',()=>{assert.equal(catalog.search('abanico Samurai')[0].id,'samurai-silence-force-plus');assert.equal(catalog.search('nevera Haceb')[0].status,'referencia genérica');});
+test('consulta vacía no enumera modelos como coincidencias',()=>assert.deepEqual([...catalog.search('')],[]));
+test('cada resultado incluye supuestos y procedencia identificable',()=>{for(const item of catalog.items){assert.ok(item.id&&item.name&&item.category&&item.variant&&item.status&&item.sourceName&&item.condition);assert.ok(item.watts>0);}});
+test('escenario de potencia usa W/1000 por horas, días y factor',()=>{const item=catalog.search('play 5')[0];assert.equal(Number((item.watts/1000*3*30*item.factor).toFixed(3)),19.413);});

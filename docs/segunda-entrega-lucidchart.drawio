@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-26T12:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="wireframes-·-8-pantallas" name="Wireframes · 8 pantallas">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w0" value="&lt;b&gt;01 · MI RESUMEN&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;Resumen del hogar&#10;┌─────────────────────────────┐&#10;│ Consumo │ Costo │ Presupuesto│&#10;├─────────────────────────────┤&#10;│ Gráfico + ver cifras        │&#10;├─────────────────────────────┤&#10;│ Accesos a tareas frecuentes│&#10;└─────────────────────────────┘&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="45" width="700" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="w1" value="&lt;b&gt;02 · EQUIPOS ELÉCTRICOS&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;Inventario&#10;[＋ Añadir equipo] [Buscar…]&#10;┌─────────────────────────────┐&#10;│ Equipo | Uso | Estado       │&#10;│ Editar · Simular · Eliminar │&#10;└─────────────────────────────┘&#10;Formulario: potencia o kWh/mes&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="810" y="45" width="700" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="w2" value="&lt;b&gt;03 · LECTURAS Y FACTURAS&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;Comparar periodos + registrar&#10;┌──────────────┬──────────────┐&#10;│ Periodo A/B  │ Nueva factura│&#10;│ kWh y costo  │ fechas, kWh  │&#10;├──────────────┴──────────────┤&#10;│ Historial y tendencia       │&#10;└─────────────────────────────┘&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="275" width="700" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="w3" value="&lt;b&gt;04 · SIMULADOR DE AHORRO&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;Elegir equipo y ajustar horas/días&#10;┌──────────────┬──────────────┐&#10;│ Antes        │ Después      │&#10;│ consumo/costo│ consumo/costo│&#10;└──────────────┴──────────────┘&#10;Añadir cambio → revisar plan&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="810" y="275" width="700" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="w4" value="&lt;b&gt;05 · PRESUPUESTO ANUAL&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;Meta de reducción · límite de gasto&#10;┌──────────────┬──────────────┐&#10;│ Costo actual │ Con propuesta│&#10;├──────────────┴──────────────┤&#10;│ Horarios sugeridos por equipo│&#10;└─────────────────────────────┘&#10;Revisar y confirmar aplicación&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="505" width="700" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="w5" value="&lt;b&gt;06 · GUÍA DE ENERGÍA&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;Conceptos y supuestos&#10;┌─────────────────┬───────────┐&#10;│ Potencia, tiempo│ Ejemplo   │&#10;│ Factor y límites│ interactivo│&#10;└─────────────────┴───────────┘&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="810" y="505" width="700" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="w6" value="&lt;b&gt;07 · TARIFAS Y FUENTES&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;[Energía] [Agua] [Aseo] [Predial]&#10;┌─────────────────┬───────────┐&#10;│ Explicación,    │ Consulta  │&#10;│ alcance y notas│ estrato   │&#10;└─────────────────┴───────────┘&#10;Fuentes identificadas&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="735" width="700" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="w7" value="&lt;b&gt;08 · CUENTA Y COPIAS&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align:left;white-space:pre-wrap&quot;&gt;┌─────────────────┬───────────┐&#10;│ Cuenta MySQL    │ Copia JSON│&#10;│ Registro / login│ Descargar │&#10;│ Sincronizar hogar│ Revisar y │&#10;│ Estado conexión │ restaurar │&#10;└─────────────────┴───────────┘&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FCFB;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="810" y="735" width="700" height="185" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mapa-de-navegación" name="Mapa de navegación">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0" value="MI RESUMEN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4F5F2;strokeColor=#168B82;fontColor=#243746;fontSize=18;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="620" y="40" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="Equipos eléctricos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A7C91;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nen1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n0" target="n1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="Lecturas y facturas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A7C91;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="210" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nen2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n0" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="Simulador de ahorro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A7C91;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="210" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nen3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n0" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="Presupuesto anual" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A7C91;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="210" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nen4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n0" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="Guía de energía" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A7C91;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="390" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nen5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n0" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="Tarifas y fuentes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A7C91;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="390" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nen6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n0" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="Cuenta y copias" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A7C91;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="390" width="300" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="nen7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n0" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nd1" value="Diálogo: equipo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E8;strokeColor=#D59A36;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="470" y="500" width="260" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="nd2" value="Revisión del plan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E8;strokeColor=#D59A36;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="500" width="260" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="nd3" value="Revisión de restauración" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E8;strokeColor=#D59A36;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="500" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="ne8" value="añadir / editar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n1" target="nd1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ne9" value="preparar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n3" target="nd2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ne10" value="proponer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n4" target="nd2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ne11" value="cargar copia" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="n7" target="nd3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="arquitectura-cliente-servidor" name="Arquitectura cliente-servidor">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a1" value="&lt;b&gt;CLIENTE · NAVEGADOR&lt;/b&gt;&lt;br&gt;&lt;br&gt;Interfaz HTML5 / CSS3&lt;br&gt;JavaScript puro&lt;br&gt;&lt;br&gt;Espacio de trabajo en localStorage&lt;br&gt;Copias JSON locales" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF5FF;strokeColor=#3E78A5;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="310" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="&lt;b&gt;HTTP · Node.js&lt;/b&gt;&lt;br&gt;backend/server.js&lt;br&gt;Sirve frontend y rutas API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF5FF;strokeColor=#3E78A5;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="470" y="170" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="&lt;b&gt;API REST&lt;/b&gt;&lt;br&gt;Validación · autenticación&lt;br&gt;Sesiones · operaciones del hogar&lt;br&gt;backend/src/api.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1EEFF;strokeColor=#7563A8;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="330" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" value="&lt;b&gt;Cálculos&lt;/b&gt;&lt;br&gt;Consumo y costo estimado&lt;br&gt;backend/src/calculations.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1EEFF;strokeColor=#7563A8;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="900" y="300" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" value="&lt;b&gt;MySQL&lt;/b&gt;&lt;br&gt;Usuarios y hogares&lt;br&gt;Equipos, lecturas, facturas&lt;br&gt;Sesiones, tarifas y estimaciones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E8;strokeColor=#D59A36;fontColor=#243746;fontSize=15;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="150" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" value="&lt;b&gt;Almacenamiento local&lt;/b&gt;&lt;br&gt;Los flujos cotidianos siguen disponibles&lt;br&gt;sin conexión MySQL configurada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F8EE;strokeColor=#71964A;fontColor=#243746;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="440" width="400" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="ae1" value="HTTP JSON same-origin" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="a1" target="a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ae2" value="rutas /api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="a2" target="a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ae3" value="cálculo" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="a2" target="a4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ae4" value="consultas / persistencia" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="a3" target="a5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ae5" value="lectura / escritura" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="a1" target="a6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ae6" value="indirecto por API" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="a1" target="a5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="modelo-entidad-relación" name="Modelo entidad-relación">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="er0" value="&lt;b&gt;USERS&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;id PK&lt;br&gt;name&lt;br&gt;email UK&lt;br&gt;password_hash&lt;br&gt;role&lt;br&gt;created_at" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="er1" value="&lt;b&gt;HOMES&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;id PK&lt;br&gt;user_id FK&lt;br&gt;name, city, stratum&lt;br&gt;budget, custom_rate&lt;br&gt;savings_goal, draft_plan&lt;br&gt;revision" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="430" y="50" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="er2" value="&lt;b&gt;DEVICES&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;id PK&lt;br&gt;home_id FK&lt;br&gt;client_key UK&lt;br&gt;name, category, mode&lt;br&gt;active, monthly_kwh&lt;br&gt;watts, quantity, hours&lt;br&gt;days, factor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="870" y="50" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="er3" value="&lt;b&gt;READINGS&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;id PK&lt;br&gt;home_id FK&lt;br&gt;client_key UK&lt;br&gt;reading_date&lt;br&gt;accumulated_kwh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="360" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="er4" value="&lt;b&gt;BILLS&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;id PK&lt;br&gt;home_id FK&lt;br&gt;client_key UK&lt;br&gt;period_start, period_end&lt;br&gt;kwh, total_paid" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="430" y="360" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="er5" value="&lt;b&gt;ESTIMATES&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;id PK&lt;br&gt;home_id FK&lt;br&gt;tariff_id FK (nullable)&lt;br&gt;rate_snapshot, kwh, cost&lt;br&gt;assumptions, created_at" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="870" y="360" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="er6" value="&lt;b&gt;TARIFFS&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;id PK&lt;br&gt;provider&lt;br&gt;period_start, period_end&lt;br&gt;rate, source_url&lt;br&gt;verification, conditions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="360" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="er7" value="&lt;b&gt;SESSIONS&lt;/b&gt;&lt;hr align=&quot;left&quot;&gt;token_hash PK&lt;br&gt;user_id FK&lt;br&gt;csrf_token&lt;br&gt;expires_at&lt;br&gt;created_at" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#168B82;fontColor=#243746;fontSize=13;spacing=8;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="50" width="290" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="er0" target="er1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="er0" target="er7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="er1" target="er2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="er1" target="er3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="er1" target="er4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="er1" target="er5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="0..1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#66788A;fontSize=11;" edge="1" parent="1" source="er6" target="er5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
