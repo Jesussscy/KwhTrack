@@ -1,5 +1,5 @@
-import {createRequire} from 'node:module';
-const {solarProfile}=createRequire(import.meta.url)('../../server/solar-provider.cjs');
+import provider from '../../server/solar-provider.cjs';
+const {solarProfile}=provider;
 const attempts=new Map();
 export const config={maxDuration:20};
 const json=(res,status,data)=>{res.statusCode=status;res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','no-store');res.end(JSON.stringify(data));};
