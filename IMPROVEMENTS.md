@@ -139,3 +139,13 @@ Pruebas: 63 unitarias aprobadas; sintaxis correcta. En navegador y origen 3202: 
 - [x] Documentar fuentes y límites; no asignar clases RETIQ.
 
 Verificación: `npm run check`; 77 pruebas aprobadas y una integración MySQL omitida por depender del entorno. Se inició en `http://127.0.0.1:3100` y respondió health `ok`; búsqueda PS5, variante, fuente, cambio a 4 h/día (25,88 kWh/mes), guardado al inventario y búsqueda de abanico Samurai verificados en navegador.
+
+## 27 de octubre de 2026 — movimiento entre secciones
+
+- [x] Sustituir la entrada de página desactivada por movimiento nativo con dirección según la navegación.
+- [x] Animar título y paneles visibles por etapas, sin retrasar el cambio de sección.
+- [x] Añadir respuesta al pulsar botones y entrada suave de los diálogos existentes.
+- [x] Añadir el botón accesible ↻ para repetir la entrada y respetar la preferencia del sistema de movimiento reducido.
+- [x] Mantener HTML5, CSS3 y JavaScript nativo; sin nuevas dependencias, cambios de base de datos ni cálculos.
+
+Verificación: sintaxis correcta; 83 pruebas aprobadas y una integración MySQL omitida por depender del entorno. En navegador aislado (3203) se midieron transformaciones y opacidad durante la transición y al repetirla, entrada del diálogo y onda del botón. Se comprobaron navegación rápida, conservación de una lectura pendiente con «Seguir editando», descarte confirmado y ausencia de avisos/errores de consola. A 375 px se verificó navegación y ausencia de desbordamiento horizontal. La preferencia de movimiento reducido se revisó en el código; no se emuló en el navegador. Evidencia visual: `output/kwhtrack-motion-desktop.png` con hogar sintético de pruebas.

@@ -1,0 +1,16 @@
+.topbar-tools { display: flex; align-items: center; gap: 12px; }
+.motion-replay { width: 40px; height: 40px; flex-shrink: 0; border: 1px solid #e3e6da; background: #fffdf3; color: #4a583d; border-radius: 13px; font-size: 22px; cursor: pointer; transition: background-color .18s, transform .18s; }
+.motion-replay:hover:not(:disabled) { background: #fff1ac; transform: rotate(-22deg); }
+.motion-replay:focus-visible { outline: 3px solid #af8900; outline-offset: 3px; }
+.motion-replay:disabled { opacity: .5; cursor: default; }
+.motion-ready button.button, .motion-ready button.icon-button { position: relative; overflow: hidden; isolation: isolate; }
+.motion-ink { position: absolute; pointer-events: none; border-radius: 50%; background: currentColor; animation: motion-ink .52s ease-out forwards; }
+@keyframes motion-ink { from { opacity: .2; transform: translate(-50%,-50%) scale(0); } to { opacity: 0; transform: translate(-50%,-50%) scale(1); } }
+@media (prefers-reduced-motion: no-preference) {
+ .motion-ready dialog[open] { animation: none; }
+ .motion-ready details[open] > :not(summary) { animation: motion-details .24s ease-out; }
+ @keyframes motion-details { from { opacity: .6; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+ .sidebar nav a { transition: background-color .18s ease-out, color .18s ease-out; }
+}
+@media (prefers-reduced-motion: reduce) { .motion-replay { transition: none; } .motion-replay:hover { transform: none; } .motion-ink { display: none; } }
+@media (max-width: 650px) { .topbar-tools { gap: 5px; } .motion-replay { width: 36px; height: 36px; border-radius: 10px; font-size: 20px; } }

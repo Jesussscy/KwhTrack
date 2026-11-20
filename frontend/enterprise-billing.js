@@ -1,0 +1,13 @@
+/* Utilidades de la experiencia de facturas: fechas UTC y comparaciones por duración real. */
+const EnterpriseBilling=(()=>{
+ const epoch=s=>{if(typeof s!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(s))return null;const n=Date.parse(s+'T00:00:00Z');return Number.isFinite(n)&&new Date(n).toISOString().slice(0,10)===s?n:null;};
+ const days=r=>{const a=epoch(r?.start),b=epoch(r?.end);return a==null||b==null||b<a?null:(b-a)/86400000+1;};
+ const daily=r=>{const d=days(r);return d&&typeof r.kwh==='number'&&Number.isFinite(r.kwh)&&r.kwh>=0?r.kwh/d:null;};
+ const overlap=(a,b)=>a.start<=b.end&&b.start<=a.end;
+ function validate(r,existing=[]){const errors=[];if(epoch(r.start)==null)errors.push({field:'start',text:'Selecciona una fecha inicial válida.'});if(epoch(r.end)==null)errors.push({field:'end',text:'Selecciona una fecha final válida.'});if(!errors.length&&r.end<r.start)errors.push({field:'end',text:'La fecha final debe ser igual o posterior a la inicial.'});if(r.kwh==null||!Number.isFinite(r.kwh)||r.kwh<0||r.kwh>100000000)errors.push({field:'kwh',text:'Introduce el consumo del periodo en kWh (0 o más).'});if(!['bill','measured','imported'].includes(r.origin))errors.push({field:'origin',text:'Selecciona de dónde procede el dato.'});if(days(r)&&existing.some(x=>x.id!==r.id&&overlap(x,r)))errors.push({field:'start',text:'Ese periodo ya está cubierto por otro registro. Revisa las fechas para no contar consumo dos veces.'});return errors;}
+ function compare(current,previous){if(!current||!previous)return {ok:false,reason:'Selecciona dos periodos.'};if(current.id===previous.id)return {ok:false,reason:'Elige dos periodos diferentes.'};if(!days(current)||!days(previous))return {ok:false,reason:'Los periodos deben tener fechas válidas.'};if(overlap(current,previous))return {ok:false,reason:'Los periodos se solapan; no se comparan.'};const a=daily(current),b=daily(previous);if(a==null||b==null)return {ok:false,reason:'Falta un consumo válido.'};return {ok:true,current:a,previous:b,delta:a-b,percent:b===0?null:(a-b)/b*100,energyDelta:current.kwh-previous.kwh,mixedOrigin:current.origin!==previous.origin};}
+ function summary(records){const valid=records.filter(r=>daily(r)!=null),total=valid.reduce((n,r)=>n+r.kwh,0),duration=valid.reduce((n,r)=>n+days(r),0);return {count:valid.length,total,days:duration,daily:duration?total/duration:null};}
+ const csvCell=value=>{let text=String(value??'');if(/^\s*[=+@-]/.test(text))text="'"+text;return '"'+text.replace(/"/g,'""')+'"';};
+ return {epoch,days,daily,validate,compare,summary,csvCell};
+})();
+if(typeof module!=='undefined'&&module.exports)module.exports=EnterpriseBilling;

@@ -8,3 +8,10 @@ artifacts/
 mysql-data/
 *.log
 .DS_Store
+
+# Runtime y evidencias locales; nunca contienen fuentes del despliegue.
+/tmp/
+/output/
+/.vercel/
+/backend/.vercel/
+/frontend/.vercel/

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>kwhTrack Empresas · Inventario y consumo por espacio</title>
+<link rel="stylesheet" href="empresarial.css">
+<link rel="stylesheet" href="enterprise-savings.css">
+<link rel="stylesheet" href="enterprise-operations.css">
+<link rel="stylesheet" href="enterprise-energy.css">
+<link rel="stylesheet" href="enterprise-solar-ux.css">
+<script src="enterprise-locations.js" defer></script>
+<script src="enterprise-energy.js" defer></script>
+<script src="enterprise-energy-ui.js" defer></script>
+<script src="enterprise-calc-client.js" defer></script>
+<script src="enterprise-layout.js" defer></script>
+<script src="enterprise-floor-draft.js" defer></script>
+<script src="enterprise-demo.js" defer></script>
+<script src="enterprise-models.js" defer></script>
+<script src="enterprise-3d.js" defer></script>
+<script src="enterprise-glb.js" defer></script>
+<script src="enterprise-billing.js" defer></script>
+<script src="enterprise-prediction.js" defer></script>
+<script src="enterprise-savings.js" defer></script>
+<script src="enterprise-forms.js" defer></script>
+<script src="enterprise-inventory.js" defer></script>
+<script src="enterprise-transport.js" defer></script>
+<script src="enterprise-solar-ux.js" defer></script>
+<script src="enterprise-decision.js" defer></script>
+<script src="enterprise-corridor.js" defer></script>
+<link rel="stylesheet" href="enterprise-decision.css">
+<script src="enterprise-experience.js" defer></script>
+<link rel="stylesheet" href="enterprise-experience.css">
+<script src="empresarial.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<div id="live" class="sr" role="status" aria-live="polite"></div>
+<div id="root"></div>
+<div id="feedback" hidden><span></span><button type="button" aria-label="Cerrar aviso">×</button></div>
+
+<dialog id="dlg" aria-labelledby="dlg-title"><form method="dialog" id="dlg-form" novalidate>
+ <div class="dlg-head"><h2 id="dlg-title"></h2><button type="button" class="btn small" data-close aria-label="Cerrar">×</button></div>
+ <div class="dlg-scroll"><div id="dlg-body"></div>
+ <p id="dlg-error" class="error" role="alert" tabindex="-1" hidden></p>
+ <div id="dlg-discard" class="dlg-discard" hidden><p>Tienes cambios sin guardar. ¿Quieres descartarlos?</p><div class="row"><button type="button" data-discard="keep">Seguir editando</button><button type="button" class="danger" data-discard="discard">Descartar cambios</button></div></div></div>
+ <div class="dlg-actions"><button type="button" class="btn" data-close>Cancelar</button><button type="submit" class="btn primary" id="dlg-ok">Guardar</button></div>
+</form></dialog>
+</body>
+</html>

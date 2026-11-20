@@ -202,3 +202,34 @@ Restaurar copia muestra el nombre y tamaño del archivo, compara el hogar actual
 Una copia incompatible o ilegible muestra un error junto a la revisión y no se puede aplicar. Elegir otra copia permite recuperarse sin recargar la aplicación. Las lecturas anteriores que terminen tarde y las lecturas canceladas no reemplazan la selección actual. Se mantiene el límite de 1 MB.
 
 Cuando el original local está dañado se ofrece descargar ese original y se conserva antes de restaurar; la vista temporal no se usa para inventar diferencias. La recuperación desde datos dañados conserva el original, mientras que restaurar sobre un hogar válido ofrece Deshacer. Las comparaciones usan cifras estimadas del inventario y no afirman medir el medidor.
+
+## Zona empresarial (`/empresarial`)
+
+La zona empresarial es independiente y no tiene enlaces desde la navegación doméstica. Demostración local: `http://127.0.0.1:3000/empresarial#demo&fresh=1&sec=prediccion`.
+
+```powershell
+cd backend
+npm ci
+npm start
+```
+
+Sin MySQL se puede explorar y editar la demostración del navegador. Con una base configurada en `backend/.env`, se habilitan cuentas, organizaciones, edificios persistentes, medidores, copias y planes. No se deben publicar `.env`, bases, credenciales ni los directorios de pruebas.
+
+- Aplica las migraciones 002 a 009 en orden, revisando los nombres exactos en `backend/database/migrations`. Las reversiones retiran los datos de su etapa y requieren respaldo.
+- Fórmula de inventario: W × cantidad × horas/día × días/mes × factor ÷ 1000. Los kWh mensuales conocidos solo se multiplican por cantidad. Un desconocido no se convierte en cero.
+- Cuentas y sesiones separadas de las domésticas; propiedad de organización, CSRF, origen, transacciones y conflictos de revisión verificados en el servidor.
+- Visor WebGL con recurso GLB y plantas generadas, cámaras por espacio/equipo, recorrido didáctico, respaldo sin WebGL y tablas equivalentes.
+- Guía y buscador, cobertura accionable, meta de ahorro revisable, cuatro escenarios y comparación solar con el consumo del mismo edificio.
+- `npm run build:glb` regenera el visor desde `frontend/enterprise-glb.src.js`.
+
+### Comprobación
+
+Desde `backend`: `npm run check`, `node --test`, `npm run test:mysql:org`, `npm run test:mysql`, `npm run e2e:integral`, `npm run e2e:decision` y `npm run e2e:solar-ux`. Las integraciones MySQL requieren una base y migraciones configuradas; se omiten explícitamente cuando faltan. Los recorridos de Chrome crean datos sintéticos aislados. `npm run local:start` es una comodidad para instalaciones Windows que ya tienen el runtime MySQL local preparado.
+
+El informe de esta etapa está en [docs/empresarial-mejora-integral.md](docs/empresarial-mejora-integral.md).
+
+### Vercel
+
+Los archivos `vercel.json` permiten publicar desde la raíz o desde `frontend`, conservando `/empresarial` como URL sin extensión. La demostración pública guarda cambios en el navegador y dispone de una función para consultar la referencia solar PVGIS. La misma implementación del proveedor se reutiliza en el servidor local.
+
+El despliegue de demostración no anuncia cuentas MySQL configuradas: el backend privado completo necesita alojamiento y una base accesible desde Internet. No se trasladan credenciales ni bases locales durante el push. El catálogo respaldado por el backend completo y las integraciones privadas permanecen sujetos a esa configuración; siempre existe registro manual del inventario.

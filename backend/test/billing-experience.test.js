@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),B=require('../../frontend/enterprise-billing.js');
+const rec=(id,start,end,kwh,origin='bill')=>({id,start,end,kwh,origin});
+test('facturas: fechas reales y duración inclusiva sin desplazamiento por zona horaria',()=>{assert.equal(B.days(rec(1,'2026-02-01','2026-02-28',0)),28);assert.equal(B.days(rec(1,'2024-02-01','2024-02-29',1)),29);assert.equal(B.epoch('2026-02-30'),null);assert.equal(B.days(rec(1,'2026-04-02','2026-04-01',1)),null);});
+test('facturas: comparación diaria normaliza periodos de distinta duración',()=>{const a=rec(1,'2026-01-01','2026-01-31',310),b=rec(2,'2026-02-01','2026-02-28',280);const c=B.compare(b,a);assert.equal(c.current,10);assert.equal(c.previous,10);assert.equal(c.percent,0);assert.equal(c.energyDelta,-30);});
+test('facturas: cero no es ausencia y no produce porcentajes inválidos',()=>{const a=rec(1,'2026-01-01','2026-01-31',0),b=rec(2,'2026-02-01','2026-02-28',280);assert.equal(B.daily(a),0);assert.equal(B.daily({...a,kwh:null}),null);assert.equal(B.compare(b,a).percent,null);assert.equal(B.validate(a).length,0);assert.equal(B.validate({...a,kwh:null}).some(x=>x.field==='kwh'),true);});
+test('facturas: evita fechas imposibles, consumo inválido, duplicados y solapamientos',()=>{const a=rec(1,'2026-01-01','2026-01-31',310);assert.ok(B.validate({...a,end:'2026-02-30'}).length);assert.ok(B.validate({...a,id:2},[a]).length);assert.ok(B.validate({...a,kwh:-1}).length);assert.ok(B.validate({...a,kwh:Infinity}).length);assert.equal(B.compare(a,a).ok,false);assert.equal(B.compare({...a,id:2},a).ok,false);assert.equal(B.validate(rec(2,'2026-02-01','2026-02-28',0),[a]).length,0);});
+test('facturas: agregados usan días registrados y no meses inventados',()=>{const rows=[rec(1,'2026-01-01','2026-01-31',310),rec(2,'2026-03-01','2026-03-31',0)];assert.deepEqual(B.summary(rows),{count:2,total:310,days:62,daily:5});assert.equal(B.summary([]).daily,null);});
+test('CSV: conserva cero, escapa nombres y neutraliza fórmulas de hojas de cálculo',()=>{assert.equal(B.csvCell(0),'"0"');assert.equal(B.csvCell('Sala "A"; piso 1'),'"Sala ""A""; piso 1"');assert.equal(B.csvCell(' =1+1'),'"\' =1+1"');});

@@ -1,0 +1,2 @@
+/** El despliegue de demostración no anuncia una base MySQL local como servicio en Internet. */
+export default function handler(req,res){res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','no-store');if(req.method!=='GET'){res.statusCode=405;res.setHeader('Allow','GET');return res.end(JSON.stringify({error:'Método no permitido.'}));}res.statusCode=200;res.end(JSON.stringify({configured:false,authenticated:false,deployment:'demo'}));}

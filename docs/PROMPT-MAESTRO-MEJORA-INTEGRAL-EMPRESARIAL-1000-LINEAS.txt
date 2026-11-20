@@ -1,0 +1,1000 @@
+0001 | BLOQUE 01. Encargo y alcance
+0002 | Actúa como diseñador de producto, especialista en UX, ingeniero y artista técnico 3D para kwhTrack Empresarial.
+0003 | Instruccion 01.01: Implementa cambios ejecutables después de inspeccionar el repositorio.
+0004 | Resultado exigido 01.01: Entrega una experiencia funcionando, no únicamente una propuesta o una maqueta.
+0005 | Instruccion 01.02: Conserva intacta la navegación doméstica y su acceso independiente.
+0006 | Resultado exigido 01.02: Ningún enlace doméstico nuevo descubre la ruta /empresarial.
+0007 | Instruccion 01.03: Mejora la aplicación empresarial existente sin crear otra paralela.
+0008 | Resultado exigido 01.03: No aparecen dos sistemas que calculan cifras diferentes para el mismo edificio.
+0009 | Instruccion 01.04: Mantén el amarillo, la tipografía y la personalidad doméstica.
+0010 | Resultado exigido 01.04: Las empresas reconocen el mismo producto con herramientas adaptadas a su contexto.
+0011 | Instruccion 01.05: Prioriza comprender, localizar, comparar y decidir sobre la energía.
+0012 | Resultado exigido 01.05: La riqueza visual ayuda a completar tareas concretas del usuario.
+0013 | Instruccion 01.06: Mantén separadas simulación, estimación, lectura registrada y control físico.
+0014 | Resultado exigido 01.06: Cada resultado tiene una procedencia y un alcance identificables.
+0015 | Instruccion 01.07: Protege cambios ajenos y archivos anteriores al encargo.
+0016 | Resultado exigido 01.07: El trabajo del usuario permanece recuperable y no se sobrescribe accidentalmente.
+0017 | Instruccion 01.08: Trabaja primero en localhost con los servicios del proyecto.
+0018 | Resultado exigido 01.08: La entrega se abre mediante una dirección local comprobada.
+0019 | Instruccion 01.09: Continúa hasta completar recorridos coherentes dentro del alcance autorizado.
+0020 | Resultado exigido 01.09: No sustituyas la implementación por otro prompt ni publiques sin petición específica.
+0021 | BLOQUE 02. Diagnóstico inicial
+0022 | Estudia la implementación real antes de elegir cambios de arquitectura o prometer funciones nuevas.
+0023 | Instruccion 02.01: Inspecciona empresarial.js y los scripts cargados en empresarial.html.
+0024 | Resultado exigido 02.01: El diagnóstico identifica qué componentes están activos y cuáles son heredados.
+0025 | Instruccion 02.02: Revisa enterprise-decision, prediction, savings, solar-ux y corridor.
+0026 | Resultado exigido 02.02: Se conocen sus responsabilidades antes de conectar nuevos controles.
+0027 | Instruccion 02.03: Comprueba la lista estática de rutas de server.js.
+0028 | Resultado exigido 02.03: Cada recurso añadido responde desde el servidor con el tipo correcto.
+0029 | Instruccion 02.04: Abre un edificio completo y un caso con pendientes.
+0030 | Resultado exigido 02.04: Los defectos se describen con reproducciones concretas, no solo con capturas antiguas.
+0031 | Instruccion 02.05: Examina selección, formularios, cámara y resultados de cada pantalla.
+0032 | Resultado exigido 02.05: Los problemas visuales se diferencian de errores de datos o de navegación.
+0033 | Instruccion 02.06: Revisa consola y peticiones de red relacionadas con fallos observados.
+0034 | Resultado exigido 02.06: No se atribuye a la interfaz un problema exclusivo de un proveedor externo.
+0035 | Instruccion 02.07: Identifica cálculos duplicados entre resumen, ahorro y solar.
+0036 | Resultado exigido 02.07: Cada diferencia numérica tiene una causa investigable y un periodo explícito.
+0037 | Instruccion 02.08: Comprueba servicios activos antes de iniciar o reiniciar procesos.
+0038 | Resultado exigido 02.08: Solo se intervienen procesos del proyecto necesarios para la tarea.
+0039 | Instruccion 02.09: Registra funciones existentes, defectos y mejoras propuestas por separado.
+0040 | Resultado exigido 02.09: La entrega no presenta como nuevo algo que ya estaba implementado.
+0041 | BLOQUE 03. Organización de las pantallas
+0042 | Ordena la aplicación según las preguntas del empresario y no según los nombres de los módulos.
+0043 | Instruccion 03.01: Define una entrada principal que explique el estado del edificio.
+0044 | Resultado exigido 03.01: La persona reconoce cuánto consume, qué destaca y qué hacer después.
+0045 | Instruccion 03.02: Agrupa el ahorro en horarios, solar y luces automáticas.
+0046 | Resultado exigido 03.02: Se distinguen tres caminos relacionados sin duplicar formularios completos.
+0047 | Instruccion 03.03: Vincula la cobertura del inventario con las decisiones afectadas.
+0048 | Resultado exigido 03.03: Un dato pendiente ofrece una corrección útil en ese mismo contexto.
+0049 | Instruccion 03.04: Sitúa estadísticas y parámetros especializados en niveles secundarios.
+0050 | Resultado exigido 03.04: La primera pantalla puede entenderse sin conocer el modelo matemático.
+0051 | Instruccion 03.05: Aclara diferencias entre simulador, predicción y plan aplicado.
+0052 | Resultado exigido 03.05: Ninguna etiqueta hace creer que explorar equivale a guardar.
+0053 | Instruccion 03.06: Mantén navegación contextual edificio, piso, espacio y equipo.
+0054 | Resultado exigido 03.06: La ubicación seleccionada permanece visible al abrir datos o cambiar de vista.
+0055 | Instruccion 03.07: Incluye volver y continuar en asistentes de varios pasos.
+0056 | Resultado exigido 03.07: La exploración no obliga a repetir información ya confirmada.
+0057 | Instruccion 03.08: Diseña estados vacíos orientados a una acción concreta.
+0058 | Resultado exigido 03.08: Una cuenta nueva sabe cómo empezar sin una pantalla de números vacíos.
+0059 | Instruccion 03.09: Reduce opciones redundantes y nombres ambiguos.
+0060 | Resultado exigido 03.09: Cada destino del menú tiene una finalidad reconocible y breve.
+0061 | BLOQUE 04. Sistema visual compartido
+0062 | Construye una identidad empresarial cuidada que conserve el amarillo sin convertirlo todo en una alerta.
+0063 | Instruccion 04.01: Define colores semánticos para selección, ahorro y datos pendientes.
+0064 | Resultado exigido 04.01: Un estado conserva su significado en tarjetas, gráficas, formularios y visor.
+0065 | Instruccion 04.02: Combina fondos cálidos con superficies verdes y azules moderadas.
+0066 | Resultado exigido 04.02: La interfaz gana jerarquía sin parecer una colección de estilos distintos.
+0067 | Instruccion 04.03: Establece tamaños de títulos, indicadores, explicaciones y notas.
+0068 | Resultado exigido 04.03: Se reconoce qué leer primero cuando varias cifras compiten en una pantalla.
+0069 | Instruccion 04.04: Unifica espacios, radios, bordes y sombras.
+0070 | Resultado exigido 04.04: Los componentes parecen parte de una misma familia visual.
+0071 | Instruccion 04.05: Diferencia botones principales, secundarios y destructivos.
+0072 | Resultado exigido 04.05: Explorar, guardar y eliminar no tienen la misma prominencia.
+0073 | Instruccion 04.06: Usa iconos consistentes para equipos, energía y navegación.
+0074 | Resultado exigido 04.06: Los símbolos se reconocen sin depender de emojis diferentes entre dispositivos.
+0075 | Instruccion 04.07: Acompaña controles de icono con texto o nombre accesible.
+0076 | Resultado exigido 04.07: Ninguna acción importante exige adivinar el significado de un dibujo.
+0077 | Instruccion 04.08: Limita párrafos y agrupa explicaciones por tarea.
+0078 | Resultado exigido 04.08: La página se puede recorrer visualmente antes de leer cada detalle.
+0079 | Instruccion 04.09: Aplica el diseño a errores, cargas y estados vacíos.
+0080 | Resultado exigido 04.09: Los momentos difíciles mantienen el cuidado de la portada.
+0081 | BLOQUE 05. Bienvenida y primera configuración
+0082 | Permite empezar sin exigir una instalación técnica extensa ni obligar a completar todos los datos opcionales.
+0083 | Instruccion 05.01: Ofrece explorar un ejemplo o configurar un edificio propio.
+0084 | Resultado exigido 05.01: Los datos ilustrativos no se mezclan con edificios de la cuenta.
+0085 | Instruccion 05.02: Explica qué información permite obtener la primera estimación.
+0086 | Resultado exigido 05.02: La persona entiende que cantidades y tiempos declarados sirven para empezar.
+0087 | Instruccion 05.03: Diseña una guía voluntaria de tres o cuatro pasos.
+0088 | Resultado exigido 05.03: Se puede cerrar y reabrir sin perder información.
+0089 | Instruccion 05.04: Resalta una acción concreta por paso.
+0090 | Resultado exigido 05.04: La ayuda enseña controles que seguirán utilizándose después del recorrido.
+0091 | Instruccion 05.05: Recuerda que una guía fue cerrada cuando corresponda.
+0092 | Resultado exigido 05.05: La introducción no reaparece insistentemente en cada visita.
+0093 | Instruccion 05.06: Permite omitir ajustes que solo mejoran precisión.
+0094 | Resultado exigido 05.06: La persona puede avanzar sin coordenadas, orientación o pérdidas detalladas.
+0095 | Instruccion 05.07: Explica edificio, piso, espacio y grupo de equipos con ejemplos.
+0096 | Resultado exigido 05.07: Se comprende dónde registrar un pasillo o cuatro aires iguales.
+0097 | Instruccion 05.08: Muestra un ejemplo breve antes del formulario completo.
+0098 | Resultado exigido 05.08: La relación entre un dato introducido y una cifra calculada resulta evidente.
+0099 | Instruccion 05.09: Permite retomar una configuración parcialmente completada.
+0100 | Resultado exigido 05.09: Salir de una sección no borra los pasos ya guardados.
+0101 | BLOQUE 06. Resumen ejecutivo
+0102 | Convierte el resumen en una lectura rápida del estado energético y de las oportunidades disponibles.
+0103 | Instruccion 06.01: Presenta consumo conocido, costo energético y cobertura como indicadores.
+0104 | Resultado exigido 06.01: Cada tarjeta muestra su periodo y no aparenta ser la factura completa.
+0105 | Instruccion 06.02: Destaca el mayor consumidor con nombre y ubicación.
+0106 | Resultado exigido 06.02: La tarjeta permite encontrar el grupo responsable dentro del edificio.
+0107 | Instruccion 06.03: Incluye distribución por pisos y por categorías.
+0108 | Resultado exigido 06.03: Se distingue dónde se consume de qué tipo de carga consume.
+0109 | Instruccion 06.04: Añade una acción siguiente adaptada a la calidad de los datos.
+0110 | Resultado exigido 06.04: Una cuenta incompleta recibe ayuda antes de propuestas excesivamente concluyentes.
+0111 | Instruccion 06.05: Muestra variaciones temporales solo cuando hay registros compatibles.
+0112 | Resultado exigido 06.05: Un mes típico no se transforma en una tendencia histórica inventada.
+0113 | Instruccion 06.06: Permite abrir el detalle de cualquier cifra agregada.
+0114 | Resultado exigido 06.06: El total puede rastrearse hasta los grupos registrados que lo componen.
+0115 | Instruccion 06.07: Aclara si el costo usa tarifa ficticia o declarada.
+0116 | Resultado exigido 06.07: Una demostración no parece aplicar un precio oficial vigente.
+0117 | Instruccion 06.08: Conserva las oportunidades protegidas y sus restricciones visibles.
+0118 | Resultado exigido 06.08: La sugerencia de ahorro no oculta cargas que deben seguir funcionando.
+0119 | Instruccion 06.09: Evita lenguaje de consumo en vivo sin medición vinculada.
+0120 | Resultado exigido 06.09: La interfaz usa estimado, declarado o medido según la fuente efectiva.
+0121 | BLOQUE 07. Contexto y trazabilidad
+0122 | Asegura que las pantallas comparten edificio, revisión, periodo, origen y escenario de forma explícita.
+0123 | Instruccion 07.01: Define un contrato común para resultados energéticos.
+0124 | Resultado exigido 07.01: La identidad y la revisión acompañan a las simulaciones y exportaciones.
+0125 | Instruccion 07.02: Distingue mes típico, mes calendario y año simulado.
+0126 | Resultado exigido 07.02: Dos cifras distintas no se comparan sin aclarar su normalización.
+0127 | Instruccion 07.03: Utiliza una referencia temporal consistente con Colombia.
+0128 | Resultado exigido 07.03: El cambio de día UTC no desplaza inesperadamente el periodo visible.
+0129 | Instruccion 07.04: Propaga la condición de demostración por los componentes.
+0130 | Resultado exigido 07.04: Los datos ilustrativos conservan su identificación al navegar.
+0131 | Instruccion 07.05: Evita generar historiales exclusivos de una página.
+0132 | Resultado exigido 07.05: Un periodo usado por predicción existe en el mismo edificio del historial.
+0133 | Instruccion 07.06: Comparte el borrador de horarios mediante un contrato explícito.
+0134 | Resultado exigido 07.06: La propuesta conserva sus cifras al pasar de ahorro a solar.
+0135 | Instruccion 07.07: Invalida resultados asociados a una revisión incompatible.
+0136 | Resultado exigido 07.07: Una consulta antigua no describe silenciosamente un inventario nuevo.
+0137 | Instruccion 07.08: Conserva propuestas compatibles tras cambios solo de apariencia o tarifa.
+0138 | Resultado exigido 07.08: Un ajuste que no altera las cargas no obliga a rehacer horarios válidos.
+0139 | Instruccion 07.09: Explica brevemente la fuente de resultados sensibles.
+0140 | Resultado exigido 07.09: La persona distingue información propia de cálculos o supuestos del sistema.
+0141 | BLOQUE 08. Gráficas explicativas
+0142 | Cada visualización debe responder una pregunta y conservar alternativas de lectura sin color ni animación.
+0143 | Instruccion 08.01: Prioriza barras para comparar consumos de grupos.
+0144 | Resultado exigido 08.01: Las diferencias pueden leerse sin interpretar áreas o perspectivas engañosas.
+0145 | Instruccion 08.02: Usa líneas temporales únicamente con periodos compatibles.
+0146 | Resultado exigido 08.02: No aparece una curva histórica construida desde un solo valor repetido.
+0147 | Instruccion 08.03: Incluye unidades y periodo cerca de los ejes.
+0148 | Resultado exigido 08.03: El usuario distingue potencia, energía y costo sin buscar una nota lejana.
+0149 | Instruccion 08.04: Etiqueta ceros y desconocidos de forma diferente.
+0150 | Resultado exigido 08.04: Un dato ausente nunca parece consumo nulo.
+0151 | Instruccion 08.05: Permite consultar valores por teclado además del puntero.
+0152 | Resultado exigido 08.05: La información de un tooltip tiene un equivalente accesible.
+0153 | Instruccion 08.06: Ofrece tablas equivalentes para los gráficos relevantes.
+0154 | Resultado exigido 08.06: Los resultados siguen disponibles con lector de pantalla o sin movimiento.
+0155 | Instruccion 08.07: Limita categorías simultáneas y permite abrir el resto.
+0156 | Resultado exigido 08.07: La visualización mantiene legibilidad cuando hay muchos equipos.
+0157 | Instruccion 08.08: Anima brevemente filtros y cambios de escenario.
+0158 | Resultado exigido 08.08: Se entiende qué cambió sin esperar una secuencia larga.
+0159 | Instruccion 08.09: Acompaña cada gráfico con una conclusión concreta.
+0160 | Resultado exigido 08.09: La persona recibe una explicación útil y no únicamente formas y colores.
+0161 | BLOQUE 09. Navegación del edificio
+0162 | Utiliza el visor como herramienta para encontrar y comprender información, con selección sincronizada.
+0163 | Instruccion 09.01: Muestra modos de edificio, oficinas, equipos, solar y pasillos.
+0164 | Resultado exigido 09.01: Se sabe qué se está observando antes de mover la cámara.
+0165 | Instruccion 09.02: Sincroniza listado, miniatura, panel y selección 3D.
+0166 | Resultado exigido 09.02: Oficina 2 representa la misma entidad en todas las vistas.
+0167 | Instruccion 09.03: Incluye volver al edificio completo junto al visor.
+0168 | Resultado exigido 09.03: Se sale de un acercamiento sin conocer gestos especiales.
+0169 | Instruccion 09.04: Mantén una regleta o lista clara de pisos.
+0170 | Resultado exigido 09.04: Se puede entrar directamente al Piso 3 sin recorrer otros niveles.
+0171 | Instruccion 09.05: Permite buscar espacios cuando hay muchos.
+0172 | Resultado exigido 09.05: La selección conserva utilidad en edificios con listas extensas.
+0173 | Instruccion 09.06: Añade acciones de enfoque fuera de la geometría.
+0174 | Resultado exigido 09.06: Una sala pequeña u oculta sigue siendo accesible.
+0175 | Instruccion 09.07: Muestra la ruta de ubicación sobre la escena.
+0176 | Resultado exigido 09.07: Se reconocen edificio, piso y espacio sin interpretar la perspectiva.
+0177 | Instruccion 09.08: Diferencia seleccionar, enfocar y editar.
+0178 | Resultado exigido 09.08: Un clic de exploración no abre accidentalmente una modificación.
+0179 | Instruccion 09.09: Conserva contexto al cerrar formularios.
+0180 | Resultado exigido 09.09: La selección y el encuadre no vuelven arbitrariamente al inicio.
+0181 | BLOQUE 10. Cámara estable
+0182 | Corrige pérdidas de orientación y transiciones contradictorias antes de añadir movimientos decorativos.
+0183 | Instruccion 10.01: Centraliza el estado de cámara y sus objetivos.
+0184 | Resultado exigido 10.01: No compiten varias interpolaciones por controlar la misma vista.
+0185 | Instruccion 10.02: Prioriza siempre la última selección.
+0186 | Resultado exigido 10.02: Piso 1, Piso 3, Piso 2 termina mostrando Piso 2.
+0187 | Instruccion 10.03: Sustituye transiciones obsoletas al recibir una orden nueva.
+0188 | Resultado exigido 10.03: La cámara no rebota hacia un destino anterior al terminar.
+0189 | Instruccion 10.04: Limita acercamiento y alejamiento a rangos útiles.
+0190 | Resultado exigido 10.04: No se pierde el edificio por un zoom excesivo.
+0191 | Instruccion 10.05: Define encuadres para edificio, piso, espacio y cubierta.
+0192 | Resultado exigido 10.05: El objetivo queda visible sin recortes por paneles o bordes.
+0193 | Instruccion 10.06: Conserva encuadre al cambiar cifras o cantidades compatibles.
+0194 | Resultado exigido 10.06: Añadir un panel no reinicia la cámara.
+0195 | Instruccion 10.07: Incluye centrar y restablecer orientación con texto claro.
+0196 | Resultado exigido 10.07: La persona puede recuperarse de una rotación confusa en una acción.
+0197 | Instruccion 10.08: Coordina control manual y recorrido automático.
+0198 | Resultado exigido 10.08: Mover la vista voluntariamente libera o pausa el seguimiento de forma comprensible.
+0199 | Instruccion 10.09: Respeta movimiento reducido en todas las cámaras.
+0200 | Resultado exigido 10.09: La navegación sigue disponible con cambios instantáneos.
+0201 | BLOQUE 11. Calidad arquitectónica
+0202 | Mejora proporciones, materiales e iluminación sin hacer pasar una maqueta por un levantamiento certificado.
+0203 | Instruccion 11.01: Unifica escala de pisos, ventanas, puertas y mobiliario.
+0204 | Resultado exigido 11.01: El edificio no parece una suma de piezas de dimensiones incompatibles.
+0205 | Instruccion 11.02: Define vidrio, metal y superficies interiores coherentes.
+0206 | Resultado exigido 11.02: La selección amarilla destaca sin cubrir indiscriminadamente la estructura.
+0207 | Instruccion 11.03: Ajusta iluminación y sombras para leer los interiores.
+0208 | Resultado exigido 11.03: No quedan salas completamente negras ni materiales quemados.
+0209 | Instruccion 11.04: Separa visualmente losas y paredes próximas.
+0210 | Resultado exigido 11.04: Los niveles pueden distinguirse incluso con una perspectiva compacta.
+0211 | Instruccion 11.05: Corrige transparencias y orden de dibujo.
+0212 | Resultado exigido 11.05: Las ventanas no producen bloques opacos sobre muebles o etiquetas.
+0213 | Instruccion 11.06: Reduce aristas y detalles pequeños innecesarios.
+0214 | Resultado exigido 11.06: La silueta del edificio sigue siendo legible a escala completa.
+0215 | Instruccion 11.07: Incluye una base discreta de orientación.
+0216 | Resultado exigido 11.07: Se comprende la posición del conjunto sin un escenario distractor.
+0217 | Instruccion 11.08: Identifica geometría esquemática o generada automáticamente.
+0218 | Resultado exigido 11.08: No se interpreta la maqueta como una medición exacta del inmueble.
+0219 | Instruccion 11.09: Conserva lectura espacial en calidad básica.
+0220 | Resultado exigido 11.09: Reducir sombras o efectos no elimina información estructural.
+0221 | BLOQUE 12. Pisos visibles y creación
+0222 | Haz que añadir, seleccionar y abrir pisos sea una secuencia comprensible y revisable.
+0223 | Instruccion 12.01: Ubica Añadir piso cerca de su selector.
+0224 | Resultado exigido 12.01: Crear un nivel no exige buscar dentro de una estructura escondida.
+0225 | Instruccion 12.02: Pregunta nombre y composición inicial con opciones claras.
+0226 | Resultado exigido 12.02: Se pueden pedir cuatro oficinas y un lobby sin dibujar una planta.
+0227 | Instruccion 12.03: Presenta una vista previa antes de guardar.
+0228 | Resultado exigido 12.03: Se entiende cuántos espacios se crearán y qué datos se conservarán.
+0229 | Instruccion 12.04: Separa nombre y posición vertical.
+0230 | Resultado exigido 12.04: Renombrar Planta baja no mueve sus equipos a otro nivel.
+0231 | Instruccion 12.05: Coordina cubierta, fachada y losa del piso activo.
+0232 | Resultado exigido 12.05: Al abrirlo no queda una pieza superior tapando el interior.
+0233 | Instruccion 12.06: Diferencia el piso explorado de los cerrados.
+0234 | Resultado exigido 12.06: El usuario no confunde una planta flotante con un nivel distinto.
+0235 | Instruccion 12.07: Mantén la separación de pisos como vista opcional.
+0236 | Resultado exigido 12.07: La entrada normal no muestra el edificio desarmado sin explicación.
+0237 | Instruccion 12.08: Conserva relaciones al duplicar o reordenar niveles.
+0238 | Resultado exigido 12.08: Equipos y medidores permanecen asociados a sus entidades correctas.
+0239 | Instruccion 12.09: Revisa eliminaciones de estructura con cantidades concretas.
+0240 | Resultado exigido 12.09: Se conoce qué espacios y equipos resultarían afectados.
+0241 | BLOQUE 13. Distribución de espacios
+0242 | Permite configurar oficinas por intención y ajustar la planta sin exigir conocimientos de dibujo técnico.
+0243 | Instruccion 13.01: Pregunta tipos y cantidades en lenguaje cotidiano.
+0244 | Resultado exigido 13.01: Se distingue oficina, gerencia, reunión y lobby.
+0245 | Instruccion 13.02: Genera alternativas de planta con un corredor identificable.
+0246 | Resultado exigido 13.02: La propuesta tiene circulación comprensible y no solo rectángulos independientes.
+0247 | Instruccion 13.03: Mantén la identidad de espacios ya existentes.
+0248 | Resultado exigido 13.03: Una reconfiguración no recrea sus equipos con identificadores nuevos.
+0249 | Instruccion 13.04: Explica cuando una distribución no cabe.
+0250 | Resultado exigido 13.04: El sistema no deforma silenciosamente las medidas para aceptar cualquier solicitud.
+0251 | Instruccion 13.05: Incluye campos numéricos y teclado además de arrastre.
+0252 | Resultado exigido 13.05: La corrección no depende exclusivamente del ratón.
+0253 | Instruccion 13.06: Resalta solapamientos y límites en el plano.
+0254 | Resultado exigido 13.06: El error indica qué espacios están en conflicto.
+0255 | Instruccion 13.07: Reubica puertas y puestos tras cambios compatibles.
+0256 | Resultado exigido 13.07: No quedan objetos fuera de la sala o cruzando una pared.
+0257 | Instruccion 13.08: Conserva la planta confirmada al recargar.
+0258 | Resultado exigido 13.08: Explorar otro piso no regenera una distribución guardada.
+0259 | Instruccion 13.09: Valida la propuesta nuevamente en el servidor.
+0260 | Resultado exigido 13.09: Manipular la vista previa no permite guardar geometría inválida.
+0261 | BLOQUE 14. Equipos dentro del 3D
+0262 | Vincula la representación al inventario y explica cuándo utiliza símbolos agrupados o decoración.
+0263 | Instruccion 14.01: Dibuja categorías reconocibles de aires, luces y computadores.
+0264 | Resultado exigido 14.01: Cada objeto se relaciona con el nombre del panel de datos.
+0265 | Instruccion 14.02: Representa cantidades grandes mediante agrupaciones.
+0266 | Resultado exigido 14.02: Un inventario extenso no se convierte en miles de piezas diminutas.
+0267 | Instruccion 14.03: Indica unidades reales junto a cada símbolo agrupado.
+0268 | Resultado exigido 14.03: El recuento visible no se confunde con la cantidad de mallas.
+0269 | Instruccion 14.04: Coloca computadores sobre los puestos disponibles.
+0270 | Resultado exigido 14.04: El mobiliario ayuda a entender el uso del espacio.
+0271 | Instruccion 14.05: Distingue decoración y cargas eléctricas.
+0272 | Resultado exigido 14.05: Una mesa o una silla ilustrativa no aumenta consumo.
+0273 | Instruccion 14.06: Permite localizar un grupo desde el ranking.
+0274 | Resultado exigido 14.06: La selección termina en el espacio y equipo correctos.
+0275 | Instruccion 14.07: Muestra nombre, cantidad, potencia, uso y energía al seleccionar.
+0276 | Resultado exigido 14.07: La ficha esencial se consulta sin cubrir toda la escena.
+0277 | Instruccion 14.08: Conserva posiciones ilustrativas en copias y recargas.
+0278 | Resultado exigido 14.08: El orden visual confirmado no desaparece al volver a entrar.
+0279 | Instruccion 14.09: Evita seleccionar accesorios que bloquean equipos.
+0280 | Resultado exigido 14.09: Un elemento decorativo no intercepta todas las interacciones.
+0281 | BLOQUE 15. Partículas y mapa energético
+0282 | Usa efectos para comunicar diferencias reales del inventario y no para fabricar sensación de medición en vivo.
+0283 | Instruccion 15.01: Define una escala común para intensidad visual y consumo.
+0284 | Resultado exigido 15.01: El mismo efecto representa la misma magnitud dentro de la comparación.
+0285 | Instruccion 15.02: Mantén datos desconocidos con un patrón identificable.
+0286 | Resultado exigido 15.02: Una sala incompleta no parece eficiente por carecer de partículas.
+0287 | Instruccion 15.03: Limita densidad de efectos por zona.
+0288 | Resultado exigido 15.03: Las nubes visuales no tapan puertas, muebles o controles.
+0289 | Instruccion 15.04: Usa movimientos suaves y trayectorias contenidas.
+0290 | Resultado exigido 15.04: Las partículas no parecen lecturas físicas de corriente medida.
+0291 | Instruccion 15.05: Acompaña la capa con leyenda numérica.
+0292 | Resultado exigido 15.05: La interpretación no depende solo de color o movimiento.
+0293 | Instruccion 15.06: Permite activar la capa de forma voluntaria.
+0294 | Resultado exigido 15.06: El edificio puede explorarse sin un efecto decorativo permanente.
+0295 | Instruccion 15.07: Sincroniza la intensidad tras recalcular una propuesta.
+0296 | Resultado exigido 15.07: La escena no conserva el consumo anterior mientras las tarjetas muestran otro.
+0297 | Instruccion 15.08: Desactiva animaciones continuas con movimiento reducido.
+0298 | Resultado exigido 15.08: La explicación energética sigue disponible en un estado estático.
+0299 | Instruccion 15.09: Reduce efectos en modo básico o baja capacidad.
+0300 | Resultado exigido 15.09: La fluidez tiene prioridad sobre el número de partículas.
+0301 | BLOQUE 16. Animaciones explicativas
+0302 | Introduce movimiento para enseñar relaciones y mantener orientación, sin imponer secuencias largas.
+0303 | Instruccion 16.01: Anima brevemente cambios entre actual y propuesta.
+0304 | Resultado exigido 16.01: Se distingue qué cifra disminuye y cuál se conserva.
+0305 | Instruccion 16.02: Coordina transiciones de tarjeta, gráfica y visor.
+0306 | Resultado exigido 16.02: Ningún elemento describe un estado distinto al seleccionado.
+0307 | Instruccion 16.03: Acumula paneles sin bloquear los controles.
+0308 | Resultado exigido 16.03: La última cantidad elegida prevalece aunque se pulse rápidamente.
+0309 | Instruccion 16.04: Abre interiores con un origen espacial reconocible.
+0310 | Resultado exigido 16.04: La cubierta deja ver la sala en vez de atravesarla al finalizar.
+0311 | Instruccion 16.05: Reserva tamaño durante cargas de contenido.
+0312 | Resultado exigido 16.05: La página no salta al aparecer un modelo o una gráfica.
+0313 | Instruccion 16.06: Confirma visualmente un guardado exitoso.
+0314 | Resultado exigido 16.06: Se distingue guardar de terminar un cálculo provisional.
+0315 | Instruccion 16.07: Detén movimientos al desmontar un componente.
+0316 | Resultado exigido 16.07: Una pantalla abandonada no conserva recorridos activos.
+0317 | Instruccion 16.08: Permite pausar, saltar o avanzar manualmente una explicación.
+0318 | Resultado exigido 16.08: La animación no retrasa el acceso a la información.
+0319 | Instruccion 16.09: Ofrece estados finales instantáneos para accesibilidad.
+0320 | Resultado exigido 16.09: Las funciones sobreviven sin interpolaciones ni desplazamientos obligatorios.
+0321 | BLOQUE 17. Registro sencillo de equipos
+0322 | Haz que añadir cargas sea una tarea guiada con unidades claras y errores corregibles.
+0323 | Instruccion 17.01: Pregunta nombre, categoría, cantidad y ubicación al inicio.
+0324 | Resultado exigido 17.01: Se comprende qué grupo se está creando antes de ver parámetros eléctricos.
+0325 | Instruccion 17.02: Distingue potencia conocida y kWh mensuales conocidos.
+0326 | Resultado exigido 17.02: El consumo mensual declarado no vuelve a multiplicarse por horas.
+0327 | Instruccion 17.03: Explica que vacío significa desconocido.
+0328 | Resultado exigido 17.03: Un campo sin dato no se convierte automáticamente en cero.
+0329 | Instruccion 17.04: Muestra cálculo preliminar al completar datos suficientes.
+0330 | Resultado exigido 17.04: Se observa el efecto de cambiar cantidad o tiempo antes de guardar.
+0331 | Instruccion 17.05: Sitúa factor de uso dentro de ayuda avanzada.
+0332 | Resultado exigido 17.05: Se puede empezar sin dominar ese concepto técnico.
+0333 | Instruccion 17.06: Mantén unidades junto a cada campo.
+0334 | Resultado exigido 17.06: W, kW, horas y kWh no se interpretan como equivalentes.
+0335 | Instruccion 17.07: Alinea casillas de pausa y esencial con sus etiquetas.
+0336 | Resultado exigido 17.07: No aparecen controles gigantes desproporcionados ni textos separados de su opción.
+0337 | Instruccion 17.08: Revisa lotes antes de crear varios grupos.
+0338 | Resultado exigido 17.08: La confirmación incluye cantidades, ubicación y cobertura del cálculo.
+0339 | Instruccion 17.09: Conserva valores cuando falla una validación.
+0340 | Resultado exigido 17.09: Corregir un campo no obliga a rehacer todo el formulario.
+0341 | BLOQUE 18. Productos y procedencia
+0342 | Ayuda a buscar equipos comerciales sin inventar que una marca determina su consumo eléctrico.
+0343 | Instruccion 18.01: Revisa la integración comercial existente.
+0344 | Resultado exigido 18.01: Se usa el contrato disponible y no se promete una API inexistente.
+0345 | Instruccion 18.02: Permite buscar categoría, marca y modelo.
+0346 | Resultado exigido 18.02: Productos similares conservan referencias distinguibles.
+0347 | Instruccion 18.03: Separa información comercial y especificaciones eléctricas.
+0348 | Resultado exigido 18.03: Una foto o un precio no se utilizan como evidencia de potencia.
+0349 | Instruccion 18.04: Conserva fuente y fecha de una especificación sugerida.
+0350 | Resultado exigido 18.04: Se puede revisar de dónde salió el dato.
+0351 | Instruccion 18.05: Distingue entrada eléctrica y capacidad térmica.
+0352 | Resultado exigido 18.05: Los BTU no se introducen como vatios consumidos.
+0353 | Instruccion 18.06: Mantén potencias ausentes como pendientes.
+0354 | Resultado exigido 18.06: El buscador no rellena todos los modelos con cifras inventadas.
+0355 | Instruccion 18.07: Permite registro manual de equipos genéricos.
+0356 | Resultado exigido 18.07: No encontrar una marca no impide completar el inventario.
+0357 | Instruccion 18.08: Marca los rangos orientativos como referencias.
+0358 | Resultado exigido 18.08: Una sugerencia no aparenta medir el aparato instalado.
+0359 | Instruccion 18.09: Gestiona falta de resultados y fallos del proveedor.
+0360 | Resultado exigido 18.09: Siempre existe una forma clara de continuar manualmente.
+0361 | BLOQUE 19. Cobertura accionable
+0362 | Sustituye la alerta genérica de inventario incompleto por una lista concreta de decisiones corregibles.
+0363 | Instruccion 19.01: Enumera equipo, piso, espacio y campos pendientes.
+0364 | Resultado exigido 19.01: La persona sabe exactamente qué impide estimar cada grupo.
+0365 | Instruccion 19.02: Cuenta completos, incompletos y pausados por separado.
+0366 | Resultado exigido 19.02: El denominador no confunde unidades físicas y líneas de inventario.
+0367 | Instruccion 19.03: Distingue sala vacía y sala sin equipos propios declarados.
+0368 | Resultado exigido 19.03: Una declaración válida evita alertas repetitivas sobre el mismo espacio.
+0369 | Instruccion 19.04: Verifica pertenencia antes de guardar declaraciones.
+0370 | Resultado exigido 19.04: Un identificador ajeno no modifica cobertura de otra organización.
+0371 | Instruccion 19.05: Abre el formulario preciso desde cada advertencia.
+0372 | Resultado exigido 19.05: No se necesita buscar el equipo en otra lista.
+0373 | Instruccion 19.06: Explica qué parte del consumo sí es conocida.
+0374 | Resultado exigido 19.06: La suma parcial no se presenta como consumo completo.
+0375 | Instruccion 19.07: Matiza rankings cuando faltan cargas relevantes.
+0376 | Resultado exigido 19.07: No se declara un ganador absoluto sin advertir su cobertura.
+0377 | Instruccion 19.08: Actualiza los avisos tras cada corrección guardada.
+0378 | Resultado exigido 19.08: Los mensajes antiguos desaparecen cuando el dato ya está disponible.
+0379 | Instruccion 19.09: Remapea declaraciones al importar una copia.
+0380 | Resultado exigido 19.09: Las referencias apuntan a los espacios nuevos y no a los originales.
+0381 | BLOQUE 20. Modelo predictivo
+0382 | Mejora el pronóstico histórico con evaluación temporal y límites verificables, preservando la simulación de inventario.
+0383 | Instruccion 20.01: Inspecciona candidatos y selección del modelo existentes.
+0384 | Resultado exigido 20.01: No se añade complejidad matemática solo para cambiar un nombre.
+0385 | Instruccion 20.02: Revisa fechas, solapamientos y huecos históricos.
+0386 | Resultado exigido 20.02: Los datos descartados se explican sin rellenar ausencias ocultamente.
+0387 | Instruccion 20.03: Entrena cada evaluación solo con periodos anteriores.
+0388 | Resultado exigido 20.03: No se filtra información futura hacia las pruebas retrospectivas.
+0389 | Instruccion 20.04: Compara modelos sobre ventanas equivalentes.
+0390 | Resultado exigido 20.04: Las diferencias de error no vienen de usar conjuntos de prueba distintos.
+0391 | Instruccion 20.05: Limita horizonte según cantidad y antigüedad del historial.
+0392 | Resultado exigido 20.05: Pocos registros no producen previsiones largas con falsa precisión.
+0393 | Instruccion 20.06: Presenta errores en unidades interpretables.
+0394 | Resultado exigido 20.06: El error retrospectivo no se confunde con certeza o ahorro.
+0395 | Instruccion 20.07: Separa tendencia histórica y efecto de reducir horas.
+0396 | Resultado exigido 20.07: El sistema no afirma haber aprendido causalidad a partir de facturas.
+0397 | Instruccion 20.08: Prueba cambios bruscos, series constantes y registros antiguos.
+0398 | Resultado exigido 20.08: El resultado se mantiene razonable o comunica que requiere revisar datos.
+0399 | Instruccion 20.09: Mantén una referencia simple de comparación.
+0400 | Resultado exigido 20.09: Un modelo complejo solo se elige cuando aporta una mejora justificable.
+0401 | BLOQUE 21. Explicación del pronóstico
+0402 | Presenta el futuro como una estimación condicionada y no como una promesa de consumo exacto.
+0403 | Instruccion 21.01: Responde cuánto podría consumirse y en qué periodo.
+0404 | Resultado exigido 21.01: La cifra principal no exige leer primero una tabla de modelos.
+0405 | Instruccion 21.02: Explica qué condiciones se mantienen constantes.
+0406 | Resultado exigido 21.02: Se entiende que nuevos equipos u otros turnos pueden cambiar el resultado.
+0407 | Instruccion 21.03: Ubica metodología detallada en Cómo se calcula.
+0408 | Resultado exigido 21.03: La portada sigue orientada a decisiones sin ocultar sus fundamentos.
+0409 | Instruccion 21.04: Distingue bandas orientativas e intervalos estadísticos demostrados.
+0410 | Resultado exigido 21.04: No se atribuye cobertura del 95 % a una regla heurística sin validación.
+0411 | Instruccion 21.05: Muestra antigüedad del último periodo utilizado.
+0412 | Resultado exigido 21.05: Un historial desactualizado no parece una observación reciente.
+0413 | Instruccion 21.06: Explica qué hacer si no hay suficientes registros.
+0414 | Resultado exigido 21.06: El usuario puede explorar inventario sin fingir un modelo histórico entrenado.
+0415 | Instruccion 21.07: Aclara la diferencia entre error y porcentaje de ahorro.
+0416 | Resultado exigido 21.07: Una mejora predictiva no se anuncia como reducción del gasto energético.
+0417 | Instruccion 21.08: Indica límites fuera del horizonte validado.
+0418 | Resultado exigido 21.08: Una proyección lejana no parece tan respaldada como una próxima.
+0419 | Instruccion 21.09: Permite abrir los periodos que sustentan la estimación.
+0420 | Resultado exigido 21.09: La cifra futura tiene una ruta comprensible hacia sus fuentes.
+0421 | BLOQUE 22. Propuestas de ahorro
+0422 | Convierte oportunidades en acciones concretas, protegidas y revisables para la operación empresarial.
+0423 | Instruccion 22.01: Ordena propuestas por energía calculable y contexto operativo.
+0424 | Resultado exigido 22.01: La primera tarjeta ofrece un ajuste reconocible y no una frase genérica.
+0425 | Instruccion 22.02: Incluye equipo, cantidad y ubicación en cada acción.
+0426 | Resultado exigido 22.02: Se sabe si el cambio afecta a Gerencia o a una reunión.
+0427 | Instruccion 22.03: Muestra horas actuales y propuestas junto a kWh.
+0428 | Resultado exigido 22.03: La diferencia puede explicarse usando esa misma tarjeta.
+0429 | Instruccion 22.04: Protege esenciales, pausados y cargas continuas.
+0430 | Resultado exigido 22.04: Una meta elevada no fuerza reducciones sobre servicios protegidos.
+0431 | Instruccion 22.05: Permite excluir grupos manualmente.
+0432 | Resultado exigido 22.05: El empresario incorpora restricciones que el inventario no conoce.
+0433 | Instruccion 22.06: Explica metas inalcanzables con los límites elegidos.
+0434 | Resultado exigido 22.06: El sistema no manipula datos para aparentar que siempre cumple.
+0435 | Instruccion 22.07: Mantén exploración separada del inventario persistido.
+0436 | Resultado exigido 22.07: Pulsar alternativas no modifica equipos sin una revisión final.
+0437 | Instruccion 22.08: Enumera cambios exactos antes de aplicar.
+0438 | Resultado exigido 22.08: La confirmación incluye los horarios que se escribirán.
+0439 | Instruccion 22.09: Detecta cambios concurrentes antes de guardar el plan.
+0440 | Resultado exigido 22.09: Una revisión antigua no sobrescribe modificaciones posteriores.
+0441 | BLOQUE 23. Aires acondicionados
+0442 | Mejora escenarios de climatización sin confundir horas declaradas, consumo medido y control físico.
+0443 | Instruccion 23.01: Indica fuente del tiempo de funcionamiento.
+0444 | Resultado exigido 23.01: Un horario introducido se distingue de duración observada por sensores.
+0445 | Instruccion 23.02: Ofrece reducciones de treinta minutos, una y dos horas.
+0446 | Resultado exigido 23.02: La comparación conserva potencia, cantidad, días y factor.
+0447 | Instruccion 23.03: Incluye cuatro aires de 1200 W, ocho horas y veintidós días.
+0448 | Resultado exigido 23.03: Con factor uno, la base es 844,8 kWh al mes.
+0449 | Instruccion 23.04: Calcula el mismo grupo con seis horas diarias.
+0450 | Resultado exigido 23.04: Aparecen 633,6 kWh y una diferencia de 211,2 kWh mensuales.
+0451 | Instruccion 23.05: Explica la variación de potencia de equipos inverter.
+0452 | Resultado exigido 23.05: Potencia nominal por tiempo no se presenta como medición del compresor.
+0453 | Instruccion 23.06: Permite restricciones de confort y operación.
+0454 | Resultado exigido 23.06: La propuesta puede revisarse antes de afectar jornadas necesarias.
+0455 | Instruccion 23.07: Evita una consigna universal de temperatura para todos los aires.
+0456 | Resultado exigido 23.07: La aplicación remite a condiciones y especificaciones del equipo real.
+0457 | Instruccion 23.08: Distingue consigna, ambiente y temperatura de panel solar.
+0458 | Resultado exigido 23.08: No se mezclan magnitudes térmicas de fenómenos distintos.
+0459 | Instruccion 23.09: Reserva control físico a integraciones compatibles verificadas.
+0460 | Resultado exigido 23.09: No se recomienda cortar un compresor con un enchufe genérico.
+0461 | BLOQUE 24. Horarios y calendario
+0462 | Muestra cuándo se utilizan los equipos y qué tramos se están explorando para reducir su operación.
+0463 | Instruccion 24.01: Dibuja inicio, final y duración de jornada.
+0464 | Resultado exigido 24.01: La relación entre reloj y horas de cálculo queda visible.
+0465 | Instruccion 24.02: Trata jornadas que cruzan medianoche de forma explícita.
+0466 | Resultado exigido 24.02: El final no parece anterior al inicio por una resta incorrecta.
+0467 | Instruccion 24.03: Separa jornada, días al mes y ocupación observada.
+0468 | Resultado exigido 24.03: Las variables no se sustituyen automáticamente entre sí.
+0469 | Instruccion 24.04: Marca visualmente el tramo propuesto como evitable.
+0470 | Resultado exigido 24.04: Se reconoce de dónde salen dos horas menos de funcionamiento.
+0471 | Instruccion 24.05: Aclara qué parte del calendario se guarda realmente.
+0472 | Resultado exigido 24.05: No se promete persistir turnos completos si solo se almacenan horas diarias.
+0473 | Instruccion 24.06: Incluye ejemplos diurnos y de actividad extendida.
+0474 | Resultado exigido 24.06: La interfaz no obliga a todas las empresas al mismo turno.
+0475 | Instruccion 24.07: Valida duración y días antes de simular.
+0476 | Resultado exigido 24.07: No aparecen consumos negativos ni meses de uso imposibles.
+0477 | Instruccion 24.08: Conserva restricciones esenciales al cambiar jornadas.
+0478 | Resultado exigido 24.08: Acortar actividad general no modifica cargas protegidas.
+0479 | Instruccion 24.09: Mantén historial independiente del calendario propuesto.
+0480 | Resultado exigido 24.09: Simular el próximo turno no reescribe consumos anteriores.
+0481 | BLOQUE 25. Cuatro escenarios coherentes
+0482 | Compara situación actual, mejores horarios, solar y combinación con una misma base energética.
+0483 | Instruccion 25.01: Usa la misma revisión de inventario en las cuatro tarjetas.
+0484 | Resultado exigido 25.01: No cambian edificio o cantidad de equipos entre alternativas.
+0485 | Instruccion 25.02: Separa demanda, generación, autoconsumo, compra y excedentes.
+0486 | Resultado exigido 25.02: Se entiende que los paneles no reducen por sí mismos la demanda.
+0487 | Instruccion 25.03: Recalcula coincidencia horaria del escenario combinado.
+0488 | Resultado exigido 25.03: El autoconsumo cambia si disminuye el uso durante horas solares.
+0489 | Instruccion 25.04: Evita sumar directamente porcentajes de ahorro independientes.
+0490 | Resultado exigido 25.04: La combinación respeta energía y no genera importaciones negativas.
+0491 | Instruccion 25.05: Identifica el periodo utilizado en cada tarjeta.
+0492 | Resultado exigido 25.05: Una cifra anual no parece comparable sin ajustes con otra mensual.
+0493 | Instruccion 25.06: Mantén pendientes los escenarios sin referencia solar compatible.
+0494 | Resultado exigido 25.06: La ausencia de curva no se sustituye por generación cero.
+0495 | Instruccion 25.07: Incluye una tabla detallada exportable.
+0496 | Resultado exigido 25.07: Los balances se pueden revisar sin depender de la gráfica.
+0497 | Instruccion 25.08: Distingue borrador y plan aplicado.
+0498 | Resultado exigido 25.08: El mismo ajuste no se descuenta dos veces tras guardar horarios.
+0499 | Instruccion 25.09: Mantén constantes los supuestos ajenos a la variable explorada.
+0500 | Resultado exigido 25.09: La diferencia entre dos escenarios tiene una causa identificable.
+0501 | BLOQUE 26. Presupuesto y costos
+0502 | Presenta límites editables y estimaciones económicas con fuente y alcance definidos.
+0503 | Instruccion 26.01: Ofrece presupuesto ajustable con guardado explícito.
+0504 | Resultado exigido 26.01: Mover un deslizador permite explorar sin modificar el valor persistido.
+0505 | Instruccion 26.02: Compara actual, propuesta y presupuesto con la misma tarifa.
+0506 | Resultado exigido 26.02: Los márgenes no cambian por mezclar fuentes de precio.
+0507 | Instruccion 26.03: Solicita fuente y fecha de tarifa empresarial.
+0508 | Resultado exigido 26.03: No se aplica una tarifa residencial automática al edificio comercial.
+0509 | Instruccion 26.04: Distingue costo energético y factura completa.
+0510 | Resultado exigido 26.04: No se promete incluir impuestos o cargos ausentes del cálculo.
+0511 | Instruccion 26.05: Permite estudiar kWh aunque no haya tarifa.
+0512 | Resultado exigido 26.05: La falta de precio no impide comprender consumo y reducción.
+0513 | Instruccion 26.06: Explica margen como por encima o por debajo del presupuesto.
+0514 | Resultado exigido 26.06: Un signo negativo no obliga a interpretar una convención desconocida.
+0515 | Instruccion 26.07: Etiqueta las proyecciones construidas multiplicando por doce.
+0516 | Resultado exigido 26.07: Una extrapolación simple no se presenta como pronóstico anual aprendido.
+0517 | Instruccion 26.08: Solicita costos declarados si se explora inversión solar.
+0518 | Resultado exigido 26.08: No se inventan instalación, mantenimiento ni retorno garantizado.
+0519 | Instruccion 26.09: Separa moneda y energía en las visualizaciones.
+0520 | Resultado exigido 26.09: COP, COP/kWh y kWh conservan funciones y unidades reconocibles.
+0521 | BLOQUE 27. Solar sencillo desde el inicio
+0522 | Permite empezar con el consumo disponible, la ciudad del edificio y una cantidad propuesta de paneles.
+0523 | Instruccion 27.01: Toma automáticamente el consumo del resumen.
+0524 | Resultado exigido 27.01: El usuario no reescribe una cifra ya conocida por el sistema.
+0525 | Instruccion 27.02: Busca ciudad por nombre con departamento visible.
+0526 | Resultado exigido 27.02: No se exige latitud ni se confunden municipios homónimos.
+0527 | Instruccion 27.03: Explica radiación y clima como motivo de ubicación.
+0528 | Resultado exigido 27.03: Se comprende por qué una ciudad cambia la referencia solar.
+0529 | Instruccion 27.04: Sitúa parámetros especializados en ajustes avanzados.
+0530 | Resultado exigido 27.04: Se obtiene un primer escenario sin dominar pérdidas o desfase horario.
+0531 | Instruccion 27.05: Marca ubicación aproximada o precisa según su origen.
+0532 | Resultado exigido 27.05: El resultado no aparenta exactitud superior a la disponible.
+0533 | Instruccion 27.06: Mantén cantidad y potencia como controles principales.
+0534 | Resultado exigido 27.06: Las decisiones habituales pueden hacerse sin abrir formularios técnicos.
+0535 | Instruccion 27.07: Evita repetir consultas para cambios que reutilizan la curva.
+0536 | Resultado exigido 27.07: Añadir un panel no provoca una nueva descarga meteorológica.
+0537 | Instruccion 27.08: Explica Wp frente a kWh con un ejemplo breve.
+0538 | Resultado exigido 27.08: Potencia nominal no se interpreta como energía constante cada hora.
+0539 | Instruccion 27.09: Conserva datos ante errores del proveedor.
+0540 | Resultado exigido 27.09: Una caída externa ofrece reintento y no borra la configuración.
+0541 | BLOQUE 28. Capacidad física de cubierta
+0542 | Separa una propuesta solar exploratoria de la comprobación real de espacio disponible para instalación.
+0543 | Instruccion 28.01: Permite explorar con superficie útil desconocida.
+0544 | Resultado exigido 28.01: Se advierte que todavía no se sabe si los paneles caben.
+0545 | Instruccion 28.02: Muestra área aproximada requerida por la propuesta.
+0546 | Resultado exigido 28.02: Cien paneles tienen una necesidad de superficie visible.
+0547 | Instruccion 28.03: Identifica dimensiones y separación como supuestos o datos declarados.
+0548 | Resultado exigido 28.03: La persona conoce de dónde sale el cálculo de área.
+0549 | Instruccion 28.04: Distingue área total y útil de instalación.
+0550 | Resultado exigido 28.04: No se usa toda la cubierta sin considerar espacios reservados.
+0551 | Instruccion 28.05: Indica limitaciones por obstáculos o accesos no modelados.
+0552 | Resultado exigido 28.05: La maqueta no aparenta haber inspeccionado físicamente el techo.
+0553 | Instruccion 28.06: Valida capacidad declarada sin encoger paneles automáticamente.
+0554 | Resultado exigido 28.06: Una cantidad excesiva se explica o revisa de forma explícita.
+0555 | Instruccion 28.07: Ofrece ajustar cantidad a una capacidad calculada conocida.
+0556 | Resultado exigido 28.07: La acción muestra cuántos paneles propone antes de cambiar el escenario.
+0557 | Instruccion 28.08: Distingue paneles existentes y nuevos propuestos.
+0558 | Resultado exigido 28.08: Una simulación no parece una instalación ya terminada.
+0559 | Instruccion 28.09: Mantén el inventario eléctrico independiente de la cubierta.
+0560 | Resultado exigido 28.09: Cambiar área solar no modifica horarios ni cargas del edificio.
+0561 | BLOQUE 29. Paneles dentro del 3D
+0562 | Integra techo, cantidad y controles en una exploración visual con representación honesta.
+0563 | Instruccion 29.01: Coloca añadir y quitar paneles junto al modelo.
+0564 | Resultado exigido 29.01: Se observa el efecto sin desplazarse al inicio del formulario.
+0565 | Instruccion 29.02: Sincroniza contador, potencia y escena.
+0566 | Resultado exigido 29.02: Todos muestran la última cantidad elegida.
+0567 | Instruccion 29.03: Conserva encuadre durante cambios de cantidad.
+0568 | Resultado exigido 29.03: Cada incremento no mueve la cámara a un destino distinto.
+0569 | Instruccion 29.04: Mantén tamaño visual coherente de los módulos.
+0570 | Resultado exigido 29.04: No se comprimen piezas para aparentar capacidad física ilimitada.
+0571 | Instruccion 29.05: Agrupa cantidades altas con una etiqueta prominente.
+0572 | Resultado exigido 29.05: Treinta símbolos que representan cien paneles se reconocen como agrupación.
+0573 | Instruccion 29.06: Muestra el aviso también sobre el visor móvil.
+0574 | Resultado exigido 29.06: La simplificación se entiende antes de desplazarse hasta notas lejanas.
+0575 | Instruccion 29.07: Compara cubierta sin propuesta y con propuesta.
+0576 | Resultado exigido 29.07: La alternancia no borra cantidades ni escenarios guardados.
+0577 | Instruccion 29.08: Incluye vista superior, inclinada y centrar techo.
+0578 | Resultado exigido 29.08: Se recupera la cubierta completa después de explorar interiores.
+0579 | Instruccion 29.09: Ofrece cubierta 2D con las mismas cifras.
+0580 | Resultado exigido 29.09: La función conserva utilidad sin WebGL.
+0581 | BLOQUE 30. Balance solar
+0582 | Conserva energía y explica cómo coinciden producción y demanda a lo largo del tiempo.
+0583 | Instruccion 30.01: Separa energía producida y utilizada directamente.
+0584 | Resultado exigido 30.01: Generación alta no equivale automáticamente al mismo ahorro de red.
+0585 | Instruccion 30.02: Calcula compra como demanda no cubierta coincidentemente.
+0586 | Resultado exigido 30.02: La importación nunca resulta negativa.
+0587 | Instruccion 30.03: Calcula excedentes cuando la producción supera el uso coincidente.
+0588 | Resultado exigido 30.03: La energía sobrante no se cuenta otra vez como consumo evitado.
+0589 | Instruccion 30.04: Conserva balances por intervalo y por periodo agregado.
+0590 | Resultado exigido 30.04: Demanda equivale a autoconsumo más importación; generación a autoconsumo más excedentes.
+0591 | Instruccion 30.05: Identifica perfiles horarios medidos, declarados o supuestos.
+0592 | Resultado exigido 30.05: Un reparto estimado no se presenta como lectura horaria real.
+0593 | Instruccion 30.06: Trata actividad nocturna sin asignarle sol del mediodía.
+0594 | Resultado exigido 30.06: Un edificio nocturno sigue necesitando red si no hay baterías modeladas.
+0595 | Instruccion 30.07: Explica ausencia de respaldo cuando no se simulan baterías.
+0596 | Resultado exigido 30.07: Ahorro energético no se confunde con autonomía ante cortes.
+0597 | Instruccion 30.08: Usa compensación de excedentes solo si está declarada.
+0598 | Resultado exigido 30.08: No se inventa precio de venta ni se copia automáticamente el de compra.
+0599 | Instruccion 30.09: Actualiza base después de aplicar horarios.
+0600 | Resultado exigido 30.09: Un plan confirmado no vuelve a descontarse en el escenario combinado.
+0601 | BLOQUE 31. Referencia solar y precisión
+0602 | Mantén la integración de generación verificable y explica qué puede estimar y qué no conoce.
+0603 | Instruccion 31.01: Revisa contrato y claves de configuración del proveedor.
+0604 | Resultado exigido 31.01: Una curva incompatible se invalida antes de reutilizarse.
+0605 | Instruccion 31.02: Conserva fuente, periodo y fecha de consulta.
+0606 | Resultado exigido 31.02: La procedencia está disponible sin saturar la portada.
+0607 | Instruccion 31.03: Distingue histórico solar y pronóstico meteorológico.
+0608 | Resultado exigido 31.03: El día medio no se anuncia como el clima de mañana.
+0609 | Instruccion 31.04: Explica la influencia de temperatura del panel.
+0610 | Resultado exigido 31.04: No se utiliza la temperatura interior como sustituto de célula fotovoltaica.
+0611 | Instruccion 31.05: Evita descontar dos veces efectos ya incluidos.
+0612 | Resultado exigido 31.05: Pérdidas o ajustes climáticos no se duplican arbitrariamente.
+0613 | Instruccion 31.06: Explica sombras y obstáculos desconocidos.
+0614 | Resultado exigido 31.06: Elegir una ciudad no implica conocer cada edificio vecino.
+0615 | Instruccion 31.07: Mantén precisión interna y redondea al mostrar.
+0616 | Resultado exigido 31.07: La suma de operaciones no acumula errores de tarjetas redondeadas.
+0617 | Instruccion 31.08: Usa caché y reintentos acotados.
+0618 | Resultado exigido 31.08: Un fallo externo no dispara consultas infinitas.
+0619 | Instruccion 31.09: Identifica curvas sintéticas utilizadas en pruebas.
+0620 | Resultado exigido 31.09: Una respuesta simulada no se presenta como una consulta real.
+0621 | BLOQUE 32. Introducción a sensores
+0622 | Explica luces, presencia y control antes de mostrar reglas técnicas o formularios de conexión.
+0623 | Instruccion 32.01: Presenta luminarias como cargas eléctricas registradas.
+0624 | Resultado exigido 32.01: Se comprende qué cantidad y potencia participan en la energía.
+0625 | Instruccion 32.02: Presenta sensores como fuentes de observación.
+0626 | Resultado exigido 32.02: Se entiende que observar presencia no equivale a controlar equipos.
+0627 | Instruccion 32.03: Explica el papel de un controlador compatible.
+0628 | Resultado exigido 32.03: La persona distingue leer, decidir y ejecutar una orden.
+0629 | Instruccion 32.04: Aclara que un enchufe medidor no demuestra ausencia.
+0630 | Resultado exigido 32.04: Potencia baja no se convierte automáticamente en sala vacía.
+0631 | Instruccion 32.05: Diferencia lecturas manuales y dispositivos vinculados.
+0632 | Resultado exigido 32.05: La demostración no aparece como telemetría en vivo.
+0633 | Instruccion 32.06: Vincula cada señal a una zona identificada.
+0634 | Resultado exigido 32.06: Una lectura de otro piso no cambia el estado del pasillo actual.
+0635 | Instruccion 32.07: Permite explorar un ejemplo sin configurar hardware.
+0636 | Resultado exigido 32.07: Se aprende la función antes de decidir una integración.
+0637 | Instruccion 32.08: Mantén conexión real separada de la animación.
+0638 | Resultado exigido 32.08: Iniciar el recorrido no solicita credenciales ni envía órdenes.
+0639 | Instruccion 32.09: Explica el objetivo antes de abrir un formulario.
+0640 | Resultado exigido 32.09: La entrada no consiste en identificadores y tiempos sin contexto.
+0641 | BLOQUE 33. Recorrido de presencia
+0642 | Construye una secuencia temporal que enseñe cómo cambian luces y reglas con señales distintas.
+0643 | Instruccion 33.01: Incluye entrada, permanencia y salida de una persona.
+0644 | Resultado exigido 33.01: El usuario reconoce qué inicia una posible espera.
+0645 | Instruccion 33.02: Muestra ausencia continua y tiempo restante.
+0646 | Resultado exigido 33.02: La simulación no propone apagar inmediatamente después de salir.
+0647 | Instruccion 33.03: Incluye reentrada antes del vencimiento.
+0648 | Resultado exigido 33.03: La presencia cancela el contador anterior y lo explica.
+0649 | Instruccion 33.04: Incluye ausencia suficiente para proponer apagado.
+0650 | Resultado exigido 33.04: La decisión ilustrativa se distingue de una orden física.
+0651 | Instruccion 33.05: Sincroniza figura, luces, estados y explicación.
+0652 | Resultado exigido 33.05: El visor no contradice la tarjeta lateral.
+0653 | Instruccion 33.06: Incluye pérdida de señal y datos vencidos.
+0654 | Resultado exigido 33.06: El silencio del sensor no se interpreta como ausencia confirmada.
+0655 | Instruccion 33.07: Ofrece iniciar, pausa, anterior, siguiente y reinicio.
+0656 | Resultado exigido 33.07: Se puede estudiar cada evento sin seguir un ritmo impuesto.
+0657 | Instruccion 33.08: Cuenta minutos encendidos y energía del guion.
+0658 | Resultado exigido 33.08: Cada intervalo utiliza el estado de las luces que estuvo vigente durante él.
+0659 | Instruccion 33.09: Separa la secuencia temporal de la hipótesis mensual.
+0660 | Resultado exigido 33.09: Dos horas didácticas no se extrapolan como medición de treinta días.
+0661 | BLOQUE 34. Reglas en lenguaje claro
+0662 | Permite expresar condiciones mediante frases y conserva protecciones operativas explícitas.
+0663 | Instruccion 34.01: Construye una frase con zona, horario y espera.
+0664 | Resultado exigido 34.01: El usuario puede explicar qué tendría que suceder para proponer apagar.
+0665 | Instruccion 34.02: Valida minutos de espera antes de guardar.
+0666 | Resultado exigido 34.02: Un plazo inválido no produce una regla parcialmente persistida.
+0667 | Instruccion 34.03: Incluye horario activo y zona horaria local.
+0668 | Resultado exigido 34.03: La evaluación respeta la franja configurada.
+0669 | Instruccion 34.04: Protege cargas esenciales y control manual.
+0670 | Resultado exigido 34.04: Una propuesta no anula estas restricciones.
+0671 | Instruccion 34.05: Exige señales recientes y continuidad suficiente.
+0672 | Resultado exigido 34.05: Una lectura antigua aislada no demuestra todo el periodo de ausencia.
+0673 | Instruccion 34.06: Explica esperando, protegido, sin señal y fuera de horario.
+0674 | Resultado exigido 34.06: Estados distintos no se agrupan bajo un mensaje ambiguo.
+0675 | Instruccion 34.07: Revisa la regla exacta antes de persistirla.
+0676 | Resultado exigido 34.07: La confirmación indica que se guarda únicamente en observación.
+0677 | Instruccion 34.08: Conserva separados guion didáctico y observaciones reales.
+0678 | Resultado exigido 34.08: Guardar no escribe presencia ficticia como si la hubiera enviado un sensor.
+0679 | Instruccion 34.09: Impide habilitar control mediante parámetros manipulados.
+0680 | Resultado exigido 34.09: El servidor mantiene las capacidades realmente implementadas.
+0681 | BLOQUE 35. Integraciones y calidad de lecturas
+0682 | Mejora el manejo de señales existentes sin anunciar conexiones que no se hayan configurado y verificado.
+0683 | Instruccion 35.01: Inspecciona integraciones activas en el servidor.
+0684 | Resultado exigido 35.01: Solo se anuncian dispositivos vinculados con evidencia de configuración.
+0685 | Instruccion 35.02: Mantén tokens fuera del frontend y de los registros públicos.
+0686 | Resultado exigido 35.02: Las credenciales no aparecen en capturas ni archivos compartidos.
+0687 | Instruccion 35.03: Registra fuente, zona, unidad y fecha de lectura.
+0688 | Resultado exigido 35.03: La cifra se interpreta sin adivinar su magnitud o procedencia.
+0689 | Instruccion 35.04: Distingue nulo, vencido y fallo de conexión.
+0690 | Resultado exigido 35.04: Ninguno de estos casos se muestra indiscriminadamente como cero.
+0691 | Instruccion 35.05: Limita consultas y cancela actualizaciones al salir.
+0692 | Resultado exigido 35.05: Navegar no duplica procesos de sincronización.
+0693 | Instruccion 35.06: Muestra la última actualización satisfactoria.
+0694 | Resultado exigido 35.06: Se reconoce información antigua aunque la tarjeta permanezca visible.
+0695 | Instruccion 35.07: No interpoles presencia para cubrir huecos de señal.
+0696 | Resultado exigido 35.07: La aplicación no inventa ocupación o ausencia durante desconexiones.
+0697 | Instruccion 35.08: Permite observaciones manuales con fuente explícita.
+0698 | Resultado exigido 35.08: Lo introducido por una persona no se convierte en telemetría automática.
+0699 | Instruccion 35.09: Documenta el contrato de futuras conexiones físicas.
+0700 | Resultado exigido 35.09: Se distinguen capacidades existentes e integraciones aún pendientes.
+0701 | BLOQUE 36. Circulación y cargas comunes
+0702 | Integra pasillos y servicios compartidos sin duplicar grupos dentro de oficinas.
+0703 | Instruccion 36.01: Asocia iluminación de pasillo con su piso.
+0704 | Resultado exigido 36.01: La energía se suma una sola vez al nivel correspondiente.
+0705 | Instruccion 36.02: Permite grupos con potencias y tiempos distintos.
+0706 | Resultado exigido 36.02: No se fuerza toda circulación a un único aparato genérico.
+0707 | Instruccion 36.03: Coloca luminarias en la zona de corredor.
+0708 | Resultado exigido 36.03: Los bombillos no aparecen dentro de una oficina equivocada.
+0709 | Instruccion 36.04: Conserva servicios comunes fuera de salas privadas.
+0710 | Resultado exigido 36.04: El desglose distingue ascensores y otras cargas compartidas.
+0711 | Instruccion 36.05: Detecta registros duplicados entre pasillo y comunes.
+0712 | Resultado exigido 36.05: El total mantiene un criterio de contabilización único.
+0713 | Instruccion 36.06: Incluye ocho LED de doce vatios y diez horas.
+0714 | Resultado exigido 36.06: A treinta días, su base es 28,8 kWh mensuales.
+0715 | Instruccion 36.07: Calcula el caso con tres horas diarias menos.
+0716 | Resultado exigido 36.07: Resultan 20,16 kWh y una diferencia de 8,64 kWh al mes.
+0717 | Instruccion 36.08: Explica potencias equivalentes para conjuntos heterogéneos.
+0718 | Resultado exigido 36.08: La simplificación conserva energía sin afirmar que todos los aparatos son iguales.
+0719 | Instruccion 36.09: Permite corregir iluminación desde el aviso de cobertura.
+0720 | Resultado exigido 36.09: La navegación abre el grupo que realmente necesita datos.
+0721 | BLOQUE 37. Medidores y energía observada
+0722 | Mantén la diferencia entre inventario estimado y consumo obtenido de lecturas compatibles.
+0723 | Instruccion 37.01: Identifica medidores generales y submedidores por alcance.
+0724 | Resultado exigido 37.01: Se sabe si la lectura representa edificio, piso o espacio.
+0725 | Instruccion 37.02: Resta únicamente índices del mismo medidor.
+0726 | Resultado exigido 37.02: No se cruzan dispositivos o unidades incompatibles.
+0727 | Instruccion 37.03: Exige fechas y lecturas válidas en los extremos del periodo.
+0728 | Resultado exigido 37.03: Un dato ausente no se sustituye por cero.
+0729 | Instruccion 37.04: Valida índices decrecientes y fechas duplicadas.
+0730 | Resultado exigido 37.04: El sistema no presenta energía negativa como consumo normal.
+0731 | Instruccion 37.05: Evita sumar otra vez submedidores al general.
+0732 | Resultado exigido 37.05: El desglose no duplica el consumo observado.
+0733 | Instruccion 37.06: Explica cobertura pendiente de submedición.
+0734 | Resultado exigido 37.06: Se distingue ausencia de datos y diferencia energética calculada.
+0735 | Instruccion 37.07: Compara medición e inventario como fuentes distintas.
+0736 | Resultado exigido 37.07: Una discrepancia invita a revisar uso y cobertura sin acusar automáticamente un equipo.
+0737 | Instruccion 37.08: Muestra antigüedad de cada lectura utilizada.
+0738 | Resultado exigido 37.08: Un registro histórico no parece una cifra en tiempo real.
+0739 | Instruccion 37.09: Protege relaciones al mover o reconfigurar espacios.
+0740 | Resultado exigido 37.09: Un cambio visual no reescribe el significado de periodos anteriores.
+0741 | BLOQUE 38. Historial sin saturación
+0742 | Conserva registros como respaldo del modelo y evita convertirlos en una carga inicial obligatoria.
+0743 | Instruccion 38.01: Mantén historial detallado fuera del recorrido básico.
+0744 | Resultado exigido 38.01: Se pueden explorar horarios y solar sin registrar varias facturas primero.
+0745 | Instruccion 38.02: Etiqueta el origen de los periodos.
+0746 | Resultado exigido 38.02: Lectura, factura e importación no se confunden dentro de una serie.
+0747 | Instruccion 38.03: Explica qué datos adicionales mejoran el pronóstico.
+0748 | Resultado exigido 38.03: La persona conoce el propósito de registrar más información.
+0749 | Instruccion 38.04: Conserva validaciones de fechas y solapamientos.
+0750 | Resultado exigido 38.04: Un periodo incompatible se corrige antes de afectar resultados.
+0751 | Instruccion 38.05: No impongas OCR o análisis de facturas como requisito.
+0752 | Resultado exigido 38.05: El encargo se concentra en consumo, ahorro, visualización y comprensión.
+0753 | Instruccion 38.06: Permite abrir el registro detrás de un punto histórico.
+0754 | Resultado exigido 38.06: La gráfica conduce a una fuente visible y no a un historial oculto.
+0755 | Instruccion 38.07: Marca periodos sintéticos también donde se consultan.
+0756 | Resultado exigido 38.07: La demostración no parece una factura real por una etiqueta ambigua.
+0757 | Instruccion 38.08: Normaliza duraciones distintas de manera explícita.
+0758 | Resultado exigido 38.08: Un mes largo no se interpreta directamente como pérdida de eficiencia.
+0759 | Instruccion 38.09: Conserva los registros al aplicar un plan nuevo.
+0760 | Resultado exigido 38.09: Un cambio propuesto no altera hechos históricos guardados.
+0761 | BLOQUE 39. Demostraciones coherentes
+0762 | Ofrece ejemplos completos y casos con errores controlados sin tocar edificios reales.
+0763 | Instruccion 39.01: Mantén un edificio de tres pisos con inventario reconocible.
+0764 | Resultado exigido 39.01: Cada oficina permite entender su aporte al consumo.
+0765 | Instruccion 39.02: Incluye aires, computadores, iluminación y servicios protegidos.
+0766 | Resultado exigido 39.02: Se pueden estudiar oportunidades y restricciones reales de la simulación.
+0767 | Instruccion 39.03: Comparte periodos sintéticos entre todas las pantallas.
+0768 | Resultado exigido 39.03: Predicción y solar no crean bases distintas por su cuenta.
+0769 | Instruccion 39.04: Usa una tarifa ficticia claramente identificada.
+0770 | Resultado exigido 39.04: El ejemplo no aparenta aplicar un precio oficial vigente.
+0771 | Instruccion 39.05: Incluye pasillos y observaciones ilustrativas de sensores.
+0772 | Resultado exigido 39.05: Hay contexto suficiente sin fingir conexión de hardware.
+0773 | Instruccion 39.06: Mantén un caso separado con datos incompletos.
+0774 | Resultado exigido 39.06: Se puede enseñar la corrección sin degradar el ejemplo completo.
+0775 | Instruccion 39.07: Protege copias locales de demostraciones anteriores.
+0776 | Resultado exigido 39.07: Abrir una versión nueva no borra silenciosamente cambios previos.
+0777 | Instruccion 39.08: Permite reiniciar solo el ejemplo con explicación concreta.
+0778 | Resultado exigido 39.08: Las cuentas y edificios reales permanecen independientes.
+0779 | Instruccion 39.09: Haz reproducibles las cifras principales.
+0780 | Resultado exigido 39.09: La validación no depende de números aleatorios que cambian cada vez.
+0781 | BLOQUE 40. Comparación de edificios
+0782 | Permite estudiar diferencias conservando periodo, cobertura, escala y procedencia de la información.
+0783 | Instruccion 40.01: Pregunta qué edificios y periodo se desean comparar.
+0784 | Resultado exigido 40.01: No se eligen conjuntos incompatibles silenciosamente.
+0785 | Instruccion 40.02: Usa una misma escala de color y unidades.
+0786 | Resultado exigido 40.02: Tonos y barras tienen significado comparable.
+0787 | Instruccion 40.03: Separa inventario y medición en bloques distintos.
+0788 | Resultado exigido 40.03: Un edificio estimado no parece equivalente a uno medido sin advertencia.
+0789 | Instruccion 40.04: Calcula indicadores normalizados solo con denominadores declarados.
+0790 | Resultado exigido 40.04: No se usan metros del plano esquemático como superficie real.
+0791 | Instruccion 40.05: Muestra diferencias de cobertura antes de ordenar resultados.
+0792 | Resultado exigido 40.05: Un inventario incompleto no parece automáticamente más eficiente.
+0793 | Instruccion 40.06: Distingue edificios reales y demostraciones.
+0794 | Resultado exigido 40.06: Un ejemplo no se incorpora por accidente al total corporativo.
+0795 | Instruccion 40.07: Ofrece sincronización opcional de orientación de cámaras.
+0796 | Resultado exigido 40.07: Comparar no impone un tamaño físico idéntico a estructuras diferentes.
+0797 | Instruccion 40.08: Incluye tabla equivalente al análisis visual.
+0798 | Resultado exigido 40.08: La comparación sigue siendo útil sin 3D.
+0799 | Instruccion 40.09: Explica límites de kWh por puesto o superficie.
+0800 | Resultado exigido 40.09: Estos indicadores no se presentan por sí solos como certificación de eficiencia.
+0801 | BLOQUE 41. Accesibilidad
+0802 | Mantén información y acciones utilizables sin depender de visión, color, movimiento o ratón.
+0803 | Instruccion 41.01: Da nombres accesibles a controles y áreas interactivas.
+0804 | Resultado exigido 41.01: Los botones de cámara y cantidades se identifican por su función.
+0805 | Instruccion 41.02: Ordena el foco según el recorrido de lectura.
+0806 | Resultado exigido 41.02: El teclado no salta sin contexto entre paneles.
+0807 | Instruccion 41.03: Devuelve foco al control que abrió un diálogo.
+0808 | Resultado exigido 41.03: Cerrar un formulario no deja a la persona desorientada.
+0809 | Instruccion 41.04: Evita trampas de teclado en el visor.
+0810 | Resultado exigido 41.04: Se puede entrar y salir usando controles habituales.
+0811 | Instruccion 41.05: Añade patrones y etiquetas al color energético.
+0812 | Resultado exigido 41.05: Los estados se distinguen aunque los colores se perciban de otra forma.
+0813 | Instruccion 41.06: Respeta movimiento reducido en toda la aplicación.
+0814 | Resultado exigido 41.06: No quedan cámaras o partículas obligatorias en ese modo.
+0815 | Instruccion 41.07: Anuncia cambios relevantes sin repetir cada fotograma.
+0816 | Resultado exigido 41.07: Un lector de pantalla recibe confirmaciones útiles y moderadas.
+0817 | Instruccion 41.08: Comprueba contraste en elementos normales y seleccionados.
+0818 | Resultado exigido 41.08: El amarillo conserva legibilidad en tarjetas, botones y leyendas.
+0819 | Instruccion 41.09: Diferencia revisión técnica y prueba con lector real.
+0820 | Resultado exigido 41.09: No se anuncia una auditoría completa si no se escuchó la aplicación.
+0821 | BLOQUE 42. Móvil y tacto
+0822 | Adapta los recorridos a pantallas pequeñas en lugar de limitarse a reducir una maqueta de escritorio.
+0823 | Instruccion 42.01: Comprueba anchos entre 320 y 500 píxeles.
+0824 | Resultado exigido 42.01: Formularios y tarjetas no producen desplazamiento horizontal accidental.
+0825 | Instruccion 42.02: Mantén controles de paneles cerca del techo.
+0826 | Resultado exigido 42.02: Se puede modificar cantidad y observar el resultado sin subir varios bloques.
+0827 | Instruccion 42.03: Adapta comparaciones extensas a tarjetas o tablas identificadas.
+0828 | Resultado exigido 42.03: Los datos permanecen legibles sin reducir excesivamente la letra.
+0829 | Instruccion 42.04: Da tamaño táctil suficiente a botones y selectores.
+0830 | Resultado exigido 42.04: Se elige un piso sin pulsar accidentalmente el vecino.
+0831 | Instruccion 42.05: Evita barras fijas que oculten títulos o campos.
+0832 | Resultado exigido 42.05: El contenido sigue visible al desplazarse y abrir el teclado.
+0833 | Instruccion 42.06: Responde a cambios de orientación y contenedor.
+0834 | Resultado exigido 42.06: La escena se reencuadra sin deformar el edificio.
+0835 | Instruccion 42.07: Ofrece botones equivalentes a gestos complejos.
+0836 | Resultado exigido 42.07: Centrar, acercar y seleccionar no depende de pellizcar o arrastrar.
+0837 | Instruccion 42.08: Simplifica efectos según capacidad y preferencias.
+0838 | Resultado exigido 42.08: La información central permanece disponible con calidad reducida.
+0839 | Instruccion 42.09: Separa emulación móvil y prueba en dispositivo físico.
+0840 | Resultado exigido 42.09: El informe indica exactamente qué entorno se verificó.
+0841 | BLOQUE 43. Rendimiento y recursos
+0842 | Optimiza lo que afecta a la experiencia y conserva datos al reducir complejidad visual.
+0843 | Instruccion 43.01: Mide carga, respuesta a selección y render por separado.
+0844 | Resultado exigido 43.01: No se confunde tiempo de dibujo con frecuencia sostenida.
+0845 | Instruccion 43.02: Carga interiores bajo demanda cuando sea adecuado.
+0846 | Resultado exigido 43.02: Abrir el edificio no construye todos los detalles innecesariamente.
+0847 | Instruccion 43.03: Reutiliza geometrías de elementos repetidos.
+0848 | Resultado exigido 43.03: Cantidades altas no disparan objetos independientes sin control.
+0849 | Instruccion 43.04: Libera recursos al destruir cada visor.
+0850 | Resultado exigido 43.04: Navegar varias veces no acumula escenas abandonadas.
+0851 | Instruccion 43.05: Suspende render continuo si no hay cambios.
+0852 | Resultado exigido 43.05: Una pantalla estática no consume recursos como una animación permanente.
+0853 | Instruccion 43.06: Limita partículas y etiquetas según densidad.
+0854 | Resultado exigido 43.06: Un edificio grande sigue siendo navegable aunque reduzca detalle.
+0855 | Instruccion 43.07: Actualiza cifras sin reconstruir geometría compatible.
+0856 | Resultado exigido 43.07: Un cálculo o cantidad solar no reinicia todo el modelo.
+0857 | Instruccion 43.08: Mantén modo básico y respaldo sin WebGL.
+0858 | Resultado exigido 43.08: La consulta de datos no depende de una GPU concreta.
+0859 | Instruccion 43.09: Documenta hardware y aceleración de las mediciones.
+0860 | Resultado exigido 43.09: Un resultado por software no se convierte en promesa universal.
+0861 | BLOQUE 44. Frontend mantenible
+0862 | Reduce estados contradictorios y acoplamiento sin imponer una migración de framework innecesaria.
+0863 | Instruccion 44.01: Define contratos claros entre ahorro, solar y circulación.
+0864 | Resultado exigido 44.01: Cada componente recibe datos explícitos y emite acciones conocidas.
+0865 | Instruccion 44.02: Centraliza fórmulas compartidas en funciones reutilizables.
+0866 | Resultado exigido 44.02: Navegador y servidor no calculan cifras divergentes.
+0867 | Instruccion 44.03: Evita manejadores globales que mezclen pantallas.
+0868 | Resultado exigido 44.03: Un botón nuevo no dispara una acción heredada ajena.
+0869 | Instruccion 44.04: Cancela listeners, observadores y temporizadores al desmontar.
+0870 | Resultado exigido 44.04: Cambiar de sección no duplica recorridos ni actualizaciones.
+0871 | Instruccion 44.05: Valida identidad y revisión de respuestas asíncronas.
+0872 | Resultado exigido 44.05: Una petición lenta no cambia el edificio seleccionado después.
+0873 | Instruccion 44.06: Distingue formulario, borrador, resultado y persistencia.
+0874 | Resultado exigido 44.06: La interfaz puede explicar qué está guardado en cada momento.
+0875 | Instruccion 44.07: Evita datos privados en URLs y depuración pública.
+0876 | Resultado exigido 44.07: Una captura técnica no revela credenciales o información sensible.
+0877 | Instruccion 44.08: Respeta política de seguridad y recursos locales.
+0878 | Resultado exigido 44.08: No se añaden permisos generales para resolver un problema puntual.
+0879 | Instruccion 44.09: Extrae módulos cuando reduzca complejidad real.
+0880 | Resultado exigido 44.09: La ejecución local sigue siendo comprensible y mantenible.
+0881 | BLOQUE 45. Backend y aislamiento
+0882 | Conserva al servidor como autoridad de propiedad, permisos, validación y consistencia de escritura.
+0883 | Instruccion 45.01: Verifica organización propietaria de cada recurso.
+0884 | Resultado exigido 45.01: Un identificador ajeno no permite leer ni modificar datos.
+0885 | Instruccion 45.02: Mantén sesión, CSRF y comprobaciones de origen.
+0886 | Resultado exigido 45.02: El rediseño no debilita protecciones de las operaciones.
+0887 | Instruccion 45.03: Ignora privilegios enviados por el navegador.
+0888 | Resultado exigido 45.03: Una cuenta no puede atribuirse otro rol u organización.
+0889 | Instruccion 45.04: Recalcula planes y distribuciones relevantes en servidor.
+0890 | Resultado exigido 45.04: La vista previa no se acepta como una orden confiable.
+0891 | Instruccion 45.05: Conserva revisión y conflictos explícitos.
+0892 | Resultado exigido 45.05: Cambios concurrentes requieren recuperación en vez de sobrescritura silenciosa.
+0893 | Instruccion 45.06: Usa transacciones en operaciones con varios cambios relacionados.
+0894 | Resultado exigido 45.06: Un fallo no deja una planta o un plan creado a medias.
+0895 | Instruccion 45.07: Valida tipos, rangos, unidades y referencias nuevos.
+0896 | Resultado exigido 45.07: Bloquear un campo en la interfaz no sustituye su verificación real.
+0897 | Instruccion 45.08: Respeta bases y configuración fuera del alcance autorizado.
+0898 | Resultado exigido 45.08: Los servicios de prueba conservan límites identificables.
+0899 | Instruccion 45.09: Prepara migraciones y respaldo cuando sea necesario.
+0900 | Resultado exigido 45.09: Un ajuste de esquema no se aplica destructivamente por improvisación.
+0901 | BLOQUE 46. Guardado y recuperación
+0902 | Protege trabajo del usuario y explica qué significa guardar, importar, duplicar y deshacer.
+0903 | Instruccion 46.01: Versiona copias cuando cambie su estructura.
+0904 | Resultado exigido 46.01: Los formatos anteriores compatibles tienen comportamiento definido.
+0905 | Instruccion 46.02: Remapea referencias al crear edificios importados.
+0906 | Resultado exigido 46.02: Espacios y medidores nuevos no apuntan a identificadores originales.
+0907 | Instruccion 46.03: Conserva procedencia y posiciones visuales compatibles.
+0908 | Resultado exigido 46.03: Una copia mantiene significado además de nombres.
+0909 | Instruccion 46.04: Excluye credenciales y conexiones físicas automáticas.
+0910 | Resultado exigido 46.04: Restaurar un archivo no activa dispositivos inesperadamente.
+0911 | Instruccion 46.05: Revisa importaciones antes de escribir registros.
+0912 | Resultado exigido 46.05: La persona conoce cantidades y limitaciones del contenido.
+0913 | Instruccion 46.06: Distingue navegador y cuenta como destinos de persistencia.
+0914 | Resultado exigido 46.06: Se entiende dónde y cómo recuperar el trabajo después.
+0915 | Instruccion 46.07: Explica qué operación revertirá Deshacer.
+0916 | Resultado exigido 46.07: El control no promete acciones que no tienen soporte.
+0917 | Instruccion 46.08: Bloquea reversiones incompatibles con cambios posteriores.
+0918 | Resultado exigido 46.08: No se eliminan modificaciones de otra sesión por accidente.
+0919 | Instruccion 46.09: Maneja almacenamiento local fallido con honestidad.
+0920 | Resultado exigido 46.09: El mensaje no anuncia guardado si el cambio solo permanece en memoria.
+0921 | BLOQUE 47. Comprobación funcional
+0922 | Verifica comportamientos y contratos importantes sin usar cantidad de pruebas como sustituto de calidad.
+0923 | Instruccion 47.01: Ejecuta las comprobaciones existentes relevantes.
+0924 | Resultado exigido 47.01: Se informa evidencia actual y no cifras copiadas de una entrega anterior.
+0925 | Instruccion 47.02: Contrasta fórmulas con cálculos independientes.
+0926 | Resultado exigido 47.02: Los ejemplos de aires, LED y balance solar tienen resultados verificables.
+0927 | Instruccion 47.03: Comprueba aislamiento y conflictos con MySQL real cuando esté disponible.
+0928 | Resultado exigido 47.03: Se distingue ejecución efectiva y prueba omitida por configuración.
+0929 | Instruccion 47.04: Recorre la interfaz en un navegador real.
+0930 | Resultado exigido 47.04: Las capturas corresponden a la versión local entregada.
+0931 | Instruccion 47.05: Cubre selecciones rápidas entre pisos.
+0932 | Resultado exigido 47.05: El estado final coincide con la última intención.
+0933 | Instruccion 47.06: Verifica cambios o borrados durante cálculos pendientes.
+0934 | Resultado exigido 47.06: La aplicación se recupera sin referencias rotas ni escrituras sobre otro contexto.
+0935 | Instruccion 47.07: Comprueba movimiento reducido, móvil y ausencia de WebGL.
+0936 | Resultado exigido 47.07: Las alternativas conservan datos y acciones principales.
+0937 | Instruccion 47.08: Identifica respuestas externas simuladas en pruebas.
+0938 | Resultado exigido 47.08: Una comprobación determinista no se presenta como conexión real al proveedor.
+0939 | Instruccion 47.09: Añade pruebas enfocadas en regresiones significativas.
+0940 | Resultado exigido 47.09: No se rellenan estadísticas con comprobaciones triviales del propio código.
+0941 | BLOQUE 48. Evidencias y documentación
+0942 | Deja instrucciones y archivos suficientes para ejecutar, revisar y mantener el resultado con honestidad.
+0943 | Instruccion 48.01: Actualiza comandos locales que existan realmente.
+0944 | Resultado exigido 48.01: Otra persona puede iniciar el proyecto desde la carpeta indicada.
+0945 | Instruccion 48.02: Registra servicios activos y puertos utilizados.
+0946 | Resultado exigido 48.02: El usuario sabe qué enlace corresponde al resultado entregado.
+0947 | Instruccion 48.03: Incluye capturas de decisiones, techo e interiores.
+0948 | Resultado exigido 48.03: La evidencia muestra tareas útiles y no solo una bienvenida.
+0949 | Instruccion 48.04: Nombra archivos según flujo y estado.
+0950 | Resultado exigido 48.04: Se encuentra un ejemplo de luces apagadas sin abrir todas las imágenes.
+0951 | Instruccion 48.05: Documenta contratos, campos y migraciones incorporados.
+0952 | Resultado exigido 48.05: La integración no exige reconstruir esta conversación.
+0953 | Instruccion 48.06: Mantén limitaciones breves y comprobables.
+0954 | Resultado exigido 48.06: Se distinguen aproximaciones, pendientes y capacidades terminadas.
+0955 | Instruccion 48.07: Identifica GPU, software y emulación usados.
+0956 | Resultado exigido 48.07: El alcance de las mediciones queda claro.
+0957 | Instruccion 48.08: Protege datos personales y secretos en evidencias.
+0958 | Resultado exigido 48.08: Las capturas se pueden revisar sin exponer cuentas privadas.
+0959 | Instruccion 48.09: Relaciona defectos corregidos con reproducciones concretas.
+0960 | Resultado exigido 48.09: Las afirmaciones de mejora tienen un comportamiento observable detrás.
+0961 | BLOQUE 49. Orden de trabajo
+0962 | Completa recorridos centrales antes de ampliar decoración o introducir nuevas complejidades técnicas.
+0963 | Instruccion 49.01: Prioriza ver interiores, elegir pisos y guardar correctamente.
+0964 | Resultado exigido 49.01: La persona puede terminar una tarea antes de añadir partículas.
+0965 | Instruccion 49.02: Corrige después consistencia entre resumen, ahorro y solar.
+0966 | Resultado exigido 49.02: Las cifras centrales son compatibles antes de sumar indicadores.
+0967 | Instruccion 49.03: Mejora formularios y correcciones de cobertura.
+0968 | Resultado exigido 49.03: Los datos necesarios se pueden completar sin recorridos confusos.
+0969 | Instruccion 49.04: Apoya el 3D en contratos e identidades estables.
+0970 | Resultado exigido 49.04: Un cambio visual no obliga a recrear entidades existentes.
+0971 | Instruccion 49.05: Añade movimiento cuando explique una relación concreta.
+0972 | Resultado exigido 49.05: Cada animación tiene una función y alternativa accesible.
+0973 | Instruccion 49.06: Integra demostraciones de sensores sin mezclar datos reales.
+0974 | Resultado exigido 49.06: Aprender no exige comprar dispositivos físicos.
+0975 | Instruccion 49.07: Verifica cada flujo completo antes de anunciar una etapa terminada.
+0976 | Resultado exigido 49.07: Una tarjeta bonita con una acción rota no cuenta como entrega funcional.
+0977 | Instruccion 49.08: Evita rehacer módulos correctos para aumentar cambios.
+0978 | Resultado exigido 49.08: El esfuerzo responde a problemas observados y necesidades reales.
+0979 | Instruccion 49.09: Resuelve decisiones rutinarias dentro del alcance autorizado.
+0980 | Resultado exigido 49.09: No interrumpas al usuario para aprobar cada elección reversible de implementación.
+0981 | BLOQUE 50. Entrega y éxito
+0982 | Entrega una aplicación local que permita comprender, localizar, comparar y decidir con información trazable.
+0983 | Instruccion 50.01: Presenta primero enlace y pantalla recomendada.
+0984 | Resultado exigido 50.01: El usuario abre el resultado sin adivinar rutas o parámetros.
+0985 | Instruccion 50.02: Resume mejoras según beneficio para la persona.
+0986 | Resultado exigido 50.02: La explicación final conecta cada cambio con una tarea más fácil.
+0987 | Instruccion 50.03: Indica cómo abrir ejemplo completo y caso con pendientes.
+0988 | Resultado exigido 50.03: Ambos son accesibles sin afectar edificios reales.
+0989 | Instruccion 50.04: Informa resultados, omisiones y alcance de las pruebas.
+0990 | Resultado exigido 50.04: No se anuncia todo verificado cuando faltaron entornos o herramientas.
+0991 | Instruccion 50.05: Explica supuestos relevantes de ahorro y predicción.
+0992 | Resultado exigido 50.05: Las cifras no se presentan como garantías comerciales.
+0993 | Instruccion 50.06: Diferencia sensores simulados y automatización física.
+0994 | Resultado exigido 50.06: No se afirma control real sin integración y verificación específica.
+0995 | Instruccion 50.07: Conserva experiencia doméstica y ruta empresarial independiente.
+0996 | Resultado exigido 50.07: Las dos audiencias pueden presentarse de forma separada.
+0997 | Instruccion 50.08: Entrega fuentes y artefactos editables necesarios.
+0998 | Resultado exigido 50.08: Los modelos y componentes no quedan únicamente en imágenes finales.
+0999 | Instruccion 50.09: Evalúa el resultado con tareas completadas por una persona.
+1000 | Resultado exigido 50.09: El éxito es entender y decidir mejor, no prometer mil funciones nuevas.

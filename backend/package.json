@@ -6,11 +6,37 @@
   "type": "module",
   "scripts": {
     "start": "node --env-file-if-exists=.env server.js",
-    "check": "node --check src/api.js && node --check src/security.js && node --check src/home-store.js && node --check src/validation.js && node --check src/database.js && node --check tools/provision-local-mysql.mjs && node --check server.js && node --check src/calculations.js && node --check ../frontend/app.js && node --check ../frontend/experience.js && node --check ../frontend/insights.js && node --check ../frontend/processes.js && node --check ../frontend/backup.js && node --check ../frontend/continuity.js && node --check ../frontend/planner.js && node --check ../frontend/annual.js && node --check ../frontend/forms.js && node --check ../frontend/storage.js && node --check ../frontend/recovery.js && node --check ../frontend/accounts.js && node --check ../frontend/comparison.js && node --check ../frontend/session-recovery.js && node --check ../frontend/account-transport.js && node --check ../frontend/chart-details.js && node --check ../frontend/bill-experience.js && node --check ../frontend/energy-experience.js && node --check ../frontend/tariff-guide.js && node --check ../frontend/bill-analysis.js && node --check ../frontend/appliance-catalog-listings.js && node --check ../frontend/appliance-catalog.js && node --check ../frontend/appliance-finder.js",
+    "check": "node --check src/api.js && node --check src/security.js && node --check src/home-store.js && node --check src/validation.js && node --check src/database.js && node --check tools/provision-local-mysql.mjs && node --check server.js && node --check src/calculations.js && node --check ../frontend/app.js && node --check ../frontend/experience.js && node --check ../frontend/insights.js && node --check ../frontend/processes.js && node --check ../frontend/backup.js && node --check ../frontend/continuity.js && node --check ../frontend/planner.js && node --check ../frontend/annual.js && node --check ../frontend/forms.js && node --check ../frontend/storage.js && node --check ../frontend/recovery.js && node --check ../frontend/accounts.js && node --check ../frontend/comparison.js && node --check ../frontend/session-recovery.js && node --check ../frontend/account-transport.js && node --check ../frontend/chart-details.js && node --check ../frontend/bill-experience.js && node --check ../frontend/energy-experience.js && node --check ../frontend/tariff-guide.js && node --check ../frontend/bill-analysis.js && node --check ../frontend/appliance-catalog-listings.js && node --check ../frontend/appliance-catalog.js && node --check ../frontend/appliance-finder.js && node --check ../frontend/motion.js && node --check src/enterprise-api.js && node --check src/enterprise-calc.js && node --check src/enterprise-validation.js && node --check ../frontend/empresarial.js && node --check ../frontend/enterprise-3d.js && node --check ../frontend/enterprise-models.js && node --check ../frontend/enterprise-calc-client.js && node --check ../frontend/enterprise-glb.js && node --check ../frontend/enterprise-demo.js && node --check ../frontend/enterprise-layout.js && node --check tools/apply-org-migrations.mjs && node --check tools/local-db.mjs && node --check tools/cdp-e2e2.mjs && node --check ../frontend/enterprise-billing.js && node --check ../frontend/enterprise-prediction.js && node --check ../frontend/enterprise-savings.js && node --check ../frontend/enterprise-forms.js && node --check ../frontend/enterprise-inventory.js && node --check ../frontend/enterprise-transport.js && node --check src/enterprise-energy.js && node --check ../frontend/enterprise-energy.js && node --check ../frontend/enterprise-energy-ui.js && node --check ../frontend/enterprise-glb.src.js && node --check src/enterprise-sensors.js && node --check src/enterprise-products.js && node --check ../frontend/enterprise-solar-ux.js && node --check ../frontend/enterprise-locations.js && node --check ../frontend/enterprise-decision.js && node --check ../frontend/enterprise-corridor.js && node --check ../frontend/enterprise-experience.js && node --check ../frontend/enterprise-floor-draft.js && node --check ../frontend/api/org/solar-profile.mjs && node --check ../frontend/api/org/session.mjs && node --check ../frontend/server/solar-provider.cjs",
     "test": "node --test",
-    "test:mysql": "node --env-file=.env --test test/api.integration.test.js"
+    "local:start": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/kwh-local.ps1 start",
+    "local:stop": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/kwh-local.ps1 stop",
+    "local:status": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/kwh-local.ps1 status",
+    "local:backup": "node tools/local-db.mjs backup",
+    "db:migrate": "node tools/local-db.mjs migrate",
+    "e2e:org2": "node tools/cdp-e2e2.mjs",
+    "db:org-test": "node tools/apply-org-migrations.mjs",
+    "e2e:org": "node tools/cdp-e2e.mjs",
+    "perf:org": "node tools/cdp-perf.mjs",
+    "test:mysql:org": "node --env-file=.env --test test/enterprise.integration.test.js test/enterprise-energy.integration.test.js",
+    "test:mysql": "node --env-file=.env --test test/api.integration.test.js",
+    "build:glb": "esbuild ../frontend/enterprise-glb.src.js --bundle --minify --format=iife --alias:three=./node_modules/three --legal-comments=none --outfile=../frontend/enterprise-glb.js",
+    "e2e:billing": "node tools/cdp-billing-experience.mjs",
+    "e2e:prediction": "node tools/cdp-prediction.mjs",
+    "e2e:prediction-v2": "node tools/cdp-prediction-v2.mjs",
+    "e2e:savings": "node tools/cdp-savings.mjs",
+    "e2e:forms": "node tools/cdp-forms.mjs",
+    "e2e:operations": "node tools/cdp-operations.mjs",
+    "e2e:energy": "node tools/cdp-energy.mjs",
+    "e2e:energy-account": "node --env-file=.env tools/cdp-energy-account.mjs",
+    "e2e:solar-ux": "node tools/cdp-solar-ux.mjs",
+    "e2e:decision": "node tools/cdp-decision.mjs",
+    "e2e:integral": "node tools/cdp-integral.mjs"
   },
   "dependencies": {
     "mysql2": "^3.15.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "three": "^0.187.0"
   }
 }
