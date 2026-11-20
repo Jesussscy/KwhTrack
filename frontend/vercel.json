@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "functions": {
+    "api/org/solar-profile.mjs": {
+      "maxDuration": 20
+    }
+  }
+}
